@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--GSAP Script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="css/home2.css">
+
+  <script src="JS/home.js" defer></script>
+  <title>Home</title>
+</head>
+<body>
+  <!-- ******* LOADING PAGE ******* -->
+  <div class="loading_page">
+    <h4 id="loadingText">LOADING</h4>
+    <div id="line"></div>
+  </div>
+
+  <!-- ******* HOME PAGE ******* -->
+  <div class="contents" style="display:none; opacity:0;">
+  
+    <div class="content1">
+      <!-- ********** NAVIGATION BAR **********-->
+      <div class="nav">
+        <ul>
+          <li><a href="/" id="nav_home">HOME</a></li>
+          <li><a href="/aboutme" id="nav_aboutme">ABOUT ME</a></li>
+          <li><a href="/project" id="nav_project">PROJECT</a></li>
+          <li><a href="/Dashboard" id="nav_skill">COMMENTS</a></li>
+        </ul>
+      </div>
+  
+      <!-- **** PART 2: ProfileImage & Title ****-->
+      <div class="ImageAndTitle">
+
+        <img src="/pic/react.png" alt="react-logo" id="react-logo-mobile">
+
+        <div class="title">
+          <div class="title_text">
+            <h2 id="title_name">Tianyi Ma</h2>
+            <h1 id="developer_text">
+              <span id="span1">Front-end</span> 
+              <span id="span2">Developer</span>
+            </h1>
+            <h2 id="designer_text"><span id="span3">& UI/UX</span> Designer</h2>
+          </div>
+          <button class="title_btn" onclick="window.location.href='/aboutme'">More About Me</button> 
+        </div>
+  
+        <div class="npgImage">
+          <div id="circle"></div>
+          <div class="npgImage-images">
+            <img src="/pic/react.png" alt="react-logo" id="npgImage-images-reactlogo">
+            <img src="/pic/tailwind-css.png" alt="tailwind-logo" id="npgImage-images-twailwindlogo">
+            <img src="/pic/javascript.png" alt="js-logo" id="npgImage-images-jslogo">
+            <img src="/pic/firebase.png" alt="firebase-logo" id="npgImage-images-firebaselogo">
+            <img src="/pic/spring-boot.png" alt="sb-logo" id="npgImage-images-sblogo">
+            <img src="/pic/node-js.png" alt="node-logo" id="npgImage-images-nodelogo">
+            <img src="/pic/jest.png" alt="jest-logo" id="npgImage-images-jestlogo">
+          </div>
+        </div>
+    </div>
+  
+    <!-- ******* PAGE 2 ******* -->
+    <div class="content2">
+      
+      <div id="content2-profile"></div>
+      <div id="content2-Text">
+        <div id="text-container">
+          <h1>About Me</h1>
+          <h2>Developer <span>& Designer</span></h2>
+          <p>Thank you guys for spending time visiting my portfolio website! This is Scott, I'm a new graduate student who is pursuing the career path of a full-stack developer. I would love to introduce myself in four words, "dreaming, passionate, consistent & optimistic". I dream of creating applications and websites that can be used and enjoyed by millions of people, I dream of one day I can open up my own company to design and host websites for other companies. I sincerely hope I can be the kind of guy who can constantly bring hope and benefits to people around me. Besides my coding career, I'm also a guitarist and chef, I have been trained on guitar for more than 6 years, and cooked for more than 10 years. I love to cook different kinds of Michelin dishes for friends around me. Based on my past experiences, I enjoyed the feeling of consistently learning, I enjoyed the feeling of becoming a greater person day by day.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ******* PAGE 3 ******* -->
+    <div class="content3">
+      
+      <div class="content3-container">
+        <h1 id="content3_title"><span>Featured</span> work</h1>
+
+        <div class="box-1-whole">
+          <div id="box-1">
+            <div id="box-1-container">
+              <h1>Front-end Development</h1>
+              <p>Based on my experience, I can confidently provide clean code and pixel-perfect designs by cooperating with different languages like HTML, CSS, JavaScript, NodeJS, GSAP, etc. I'm good at using React library. Here are some of the projects I did along the way as milestones. Sincerely hope you enjoy them! My trip on becoming developer is just started, can't wait to learn more interesting features! </p>
+              <button onclick="window.location.href='/project' ">View Projet</button>
+            </div>
+          </div>
+          <div class="logos">
+            <img src="./pic/react.png" alt="react-logo" id="box-1-react">
+            <img src="./pic/css.png" alt="css-logo" id="css-logo">
+            <img src="./pic/html5.png" alt="html-logo" id="html-logo">
+            <img src="./pic/javascript.png" alt="js-logo" id="js-logo">
+            <img src="./pic/gsap-greensock.svg" alt="gsap-logo" id="gsap-logo">
+          </div>
+        </div>
+
+        <div class="box-2-whole">
+            <div id="box-2">
+              <div id="box-2-container">
+                <h1>Back-end Development</h1>
+                <p>I can confidently use different libraries within NodeJS to construct connection between clients, server and database. I'm good at using different algorithms and libraries to manipulate and manage data. I can confidently use SpringBoot to generate different mapping request. There are still tons of stuff that are still waiting for me to learn, I'm really looking forward to diving deeper and deeper</p>
+                <button onclick="window.location.href='/project'">View Projet</button>
+              </div>
+            </div>
+            <div class="box-2-logos">
+              <img src="./pic/react.png" alt="react-logo" id="box-2-react">
+              <img src="./pic/node-js.png" alt="node-logo" id="box-2-node">
+              <img src="./pic/mongodb.png" alt="mongo-logo" id="box-2-mongo">
+              <img src="./pic/spring-boot.png" alt="sb-logo" id="box-2-springboot">
+              <img src="./pic/firebase.png" alt="fb-logo" id="box-2-firebase">
+            </div>
+        </div>
+
+        <div class="box-3-whole">
+          <div id="box-3">
+            <div id="box-3-container">
+              <h1>Testing Framework</h1>
+              <p>I can confidently writing react jest testings, including unit testings, integration testings as well as end-to-end testings. I will be keep learning more and more testing techniques and platforms in the future</p>
+              <button onclick="window.location.href='/project'">View Projet</button>
+            </div>
+          </div>
+          <div class="box-3-logos">
+            <img src="./pic/jest.png" alt="jest-logo" id="box-3-jest">
+            <img src="./pic/mocha.png" alt="mocha-logo" id="box-3-mocha">
+          </div>
+        </div>
+
+        <img src="./pic/javascript.png" alt="js-image" id="js-mobile-background">
+      </div>
+    </div>
+
+
+    <!-- ******* PAGE 4 ******* -->
+    <div class="content4" id="content4">
+        <img src="./pic/music.png" alt="music-icon" id="music-icon-1">
+        <img src="./pic/music2.png" alt="music-icon-2" id="music-icon-2">
+        <div class="guitar-info">
+          <div class="guitar-content">
+            <div id="guitar-content-h1-h2">
+              <h1>Guitarist</h1>
+              <h2>Life Interest <span>Besides Coding</span></h2>
+            </div>
+            <p>I have been playing guitar for more than 6 years. I really can't help myself love the feeling of calming and releasing myself through playing music. It's quite hard to explain how fantastic it feels. I love playing guitar by adding fingerstyle and percussive techniques. There is just so much fun and so many techniques to learn inside this instrument. I will keep diving deeper and hopefully one day I can publish my personal albums</p>
+          </div>
+        </div>
+        <div class="guitar-image"></div>
+      </div>
+
+      <!-- ******* PAGE 5 ******* -->
+      <div class="content5">
+        <div class="chef-image"><div id="black-layer"></div></div>
+        <div class="chef-info">
+          <div class="chef-content">
+            <div id="chef-content-h1-h2">
+              <h1>Chef</h1>
+              <h2>Dream of Becoming a <span>Michelin Chef</span></h2>
+            </div>
+            <p>Becoming a Michelin Chef is one of my childhood dreams. I love to see how these Michelin Chefs create their personalized dishes just like creating pieces of artwork. I love to see how they tease up their customers' tongues and grab their hearts by adding up different magical tastes altogether inside their dishes. There is just so much fun inside of cooking! I have been training myself in cooking for more than ten years, I love to see the comfortable and satisfied smiles on my friends' faces everytime when I cook for them.</p>
+          </div>
+        </div>
+        <img src="./pic/chef2.png" alt="chef-logo" id="chef-logo">
+      </div>
+
+      <!-- ******* PAGE 6 ******* -->
+      <div class="content6">
+        <img src="./pic/shuttle.png" alt="shuttle-icon" id="shuttle-icon">
+        <div class="badminton-info">
+          <div class="badminton-content">
+            <div id="badminton-content-h1-h2">
+              <h1>Badminton</h1>
+              <h2>Trained for <span>5-Years</span></h2>
+            </div>
+            <p>Badminton is one of the several saviors of my life, I played badminton for at least 5 years so far, and still can't help myself loving it! I loved the relaxed and peaceful feeling whenever I get back from the badminton center. For me, it's the greatest way ever to release myself from all the distress and bad feelings!</p>
+          </div>
+        </div>
+        <div class="badminton-image"></div>
+      </div>
+
+      <!-- ******* PAGE 6 ******* -->
+      <div class="content7">
+        <div class="caligraphy-icon"></div>
+        <div class="caligraphy-info">
+          <div class="caligraphy-content">
+            <div id="caligraphy-content-h1-h2">
+              <h1>Caligraphy</h1>
+              <h2>Consistently Training <span>for 10+ Years</span></h2>
+            </div>
+            <p>Calligraphy means writing perfect-looking handwriting. It's kind of similar to drawing and painting. My dad is good at Calligraphy, I can still remember he told me that how you write can normally reflect what kind of person you are and how your spirit looks like. Although that sounds like bull shit to me when I was young, in my 10 years of continuous learning, I found that learning Calligraphy did help me a lot on becoming a more concentrated and peaceful person.</p>
+          </div>
+        </div>
+        <img src="./pic/pen.png" alt="pen-icon" id="pen-icon">
+      </div>
+
+      <!-- ******* PAGE 7 ******* -->
+      <div class="content8">
+        <div class="warren-container">
+          <h1>“You have only one mind and one body for the rest of your life. It's what you do right now, today, that determines how your mind and body will operate ten, twenty, and thirty years from now."</h1>
+          <h2>-- Warren Buffet</h2>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>

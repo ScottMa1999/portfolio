@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/comments.css">
+  <!--GSAP Script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+
+  <script src="JS/comments.js" defer></script>
+  <title>Write Comments</title>
+</head>
+<body>
+  <section class="write-content1">
+    <div class="write-content1-title">
+      <h1>COMMENTS</h1>
+    </div>
+    <div class="write-content1-nav-subtitle">
+      <div class="write-content1-subtitle">
+        <p>Plz help me point out where to improve!</p>
+      </div>
+      <ul class="write-content1-nav">
+        <li id="blog_btn"><a href="/Dashboard"><button>DASHBOARD</button></a></li>
+        <li id="about_btn"><a href="/About"><button>ABOUT</button></a></li>
+        <li id="write_btn"><a href="/Create-Comments"><button>NEW COMMENTS</button></a></li>
+      </ul> 
+    </div>
+  </section>
+
+  <section class="write-content2">
+    <form class="input-form" action="/Dashboard" method="post">
+      <label for="title" id="title">COMMENT TITLE:</label>
+      <input id="title" type="text" name="title" placeholder="Input your comment title...">
+      <label for="snippet" id="snippet">COMMENT SNIPPET:</label>
+      <input id="snippet" type="text" name="snippet" placeholder="Input your comment snippet...">
+      <label for="body" id="body">COMMENT BODY:</label>
+      <textarea id="body" type="text" name="body" placeholder="Input your comment body..."></textarea>
+      <button id="write-sumbit-btn">SUBMIT</button>
+    </form>
+  </section>
+
+  <section class="writer-footer">
+    <p>Copyright © Tianyi's Blog 2022</p>
+  </section>
+</body>
+</html>

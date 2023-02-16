@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/comments.css">
+  <!--GSAP Script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="JS/comments.js" defer></script>
+
+  <title>Dashboard</title>
+</head>
+<body>
+
+  <section class="content1">
+
+    <div class="content1-title">
+      <a href="/"><h1>DASHBOARD</h1></a>
+    </div>
+     
+    <div class="content1-nav-subtitle">
+      <div class="content1-subtitle">
+        <p>Sincerely hope to hear more advice and comments from you guys!</p>
+      </div>
+      <ul class="content1-nav">
+        <li id="blog_btn"><a href="/Dashboard"><button>DASHBOARD</button></a></li>
+        <li id="about_btn"><a href="/About"><button>ABOUT</button></a></li>
+        <li id="write_btn"><a href="/Create-Comments"><button>CREATE COMMENTS</button></a></li>
+      </ul> 
+    </div>
+  </section>
+
+    
+  <section class="content2">
+    <div class="section2-blogs">
+      
+      <% if (comments.length > 0) { %>
+        <% comments.forEach(comment => { %>
+          <h3 class="content2-title"><%= comment.title %></h3>
+          <p class="content2-snippet"><%= comment.snippet %></p>
+          <p class="content2-body"><%= comment.body %></p>
+        <% }) %>
+      <% } else { %>
+        <p>There are no comments to diaplay!</p>
+      <% } %>
+
+    </div>
+  </section>
+
+  <section class="footer">
+    <p>Copyright © Tianyi's Blog 2022</p>
+  </section>
+  
+</body>
+</html>
