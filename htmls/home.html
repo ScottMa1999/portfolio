@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--GSAP Script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <link rel="stylesheet" href="../css/home.css">
+
+  <script src="../home.js" defer></script>
+  <title>Home</title>
+</head>
+<body>
+  <!-- ******* LOADING PAGE ******* -->
+  <div class="loading_page">
+    <h4 id="loadingText">LOADING</h4>
+    <div id="line"></div>
+  </div>
+
+  <!-- ******* HOME PAGE ******* -->
+  <div class="contents" style="display:none; opacity:0;">
+  
+    <div class="content1">
+      <!-- ********** NAVIGATION BAR **********-->
+      <div class="navbar">
+        <ul>
+          <li><a href="#####" id="nav_home">HOME</a></li>
+          <li><a href="#####" id="nav_aboutme">ABOUT ME</a></li>
+          <li><a href="#####" id="nav_project">PROJECT</a></li>
+          <li><a href="#####" id="nav_skill">SKILL</a></li>
+        </ul>
+      </div>
+  
+      <!-- **** PART 2: ProfileImage & Title ****-->
+      <div class="ImageAndTitle">
+
+        <img src="/pic/react.png" alt="react-logo" id="react-logo-mobile">
+
+        <div class="title">
+          <div class="title_text">
+            <h2 id="title_name">Tianyi Ma</h2>
+            <h1 id="developer_text">
+              <span id="span1">Front-end</span> 
+              <span id="span2">Developer</span>
+            </h1>
+            <h2 id="designer_text"><span id="span3">& UI/UX</span> Designer</h2>
+          </div>
+          <button class="title_btn" onclick="xxxx">More About Me</button> 
+        </div>
+  
+        <div class="npgImage">
+          <div id="circle"><img src="/pic/react.png" alt="react-logo" id="react-logo"></div>
+          <img src="./pic/sample.png" alt="sample" id="man1">
+        </div>
+
+      </div>
+    </div>
+  
+    <!-- ******* PAGE 2 ******* -->
+    <div class="content2">
+      
+      <div id="content2-profile"></div>
+      <div id="content2-Text">
+        <div id="text-container">
+          <h1>About Me</h1>
+          <h2>Developer <span>& Designer</span></h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque voluptatibus hic quibusdam ducimus cupiditate? Ab similique unde, vitae in consequuntur dolor earum a at fuga exercitationem voluptatem minus. Ex, quibusdam. Vel provident ipsam odio similique temporibus nesciunt excepturi perferendis eius molestiae in? Maiores nostrum soluta ipsa, natus tenetur, sequi, voluptates ratione ea minima quidem libero dolores. Maxime magnam in architecto cum dicta, eligendi earum, et ratione est eveniet mollitia reprehenderit beatae. Nostrum tempora ut, eum omnis, libero quasi ducimus dolor veniam excepturi repellendus dolorem voluptates vero consequuntur aperiam laboriosam laborum fuga voluptatibus illum, veritatis architecto! Quisquam saepe voluptatem quibusdam corrupti. Iusto quia cumque sed. Quo voluptatum omnis veniam cupiditate, quam numquam cumque, quisquam, enim maxime sunt nemo! Necessitatibus aliquid adipisci vero ad, recusandae delectus? Perferendis doloribus ut exercitationem ad dolor, dolores fuga nihil laudantium tempora incidunt placeat necessitatibus ab numquam culpa rem, aliquid distinctio neque quis minima, eius asperiores quibusdam?</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ******* PAGE 3 ******* -->
+    <div class="content3">
+      
+      <div class="content3-container">
+        <h1 id="content3_title"><span>Featured</span> work</h1>
+
+        <div class="box-1-whole">
+          <div id="box-1">
+            <div id="box-1-container">
+              <h1>Front-end Development</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium porro aliquid veniam? Ea recusandae consequuntur nesciunt consequatur aut minima neque odit eius nihil, accusantium modi a, ullam laborum eligendi sed sapiente atque blanditiis repellendus similique nemo quod ratione, obcaecati optio deleniti? In autem, perspiciatis molestiae vitae facere nihil unde qui.</p>
+              <button onclick="xxxx">View Projet</button>
+            </div>
+          </div>
+          <div class="logos">
+            <img src="./pic/react.png" alt="react-logo" id="box-1-react">
+            <img src="./pic/css.png" alt="css-logo" id="css-logo">
+            <img src="./pic/html5.png" alt="html-logo" id="html-logo">
+            <img src="./pic/javascript.png" alt="js-logo" id="js-logo">
+            <img src="./pic/gsap-greensock.svg" alt="gsap-logo" id="gsap-logo">
+          </div>
+        </div>
+
+        <div class="box-2-whole">
+            <div id="box-2">
+              <div id="box-2-container">
+                <h1>Back-end Development</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium porro aliquid veniam? Ea recusandae consequuntur nesciunt consequatur aut minima neque odit eius nihil, accusantium modi a, ullam laborum eligendi sed sapiente atque blanditiis repellendus similique nemo quod ratione, obcaecati optio deleniti? In autem, perspiciatis molestiae vitae facere nihil unde qui.</p>
+                <button onclick="xxxx">View Projet</button>
+              </div>
+            </div>
+            <div class="box-2-logos">
+              <img src="./pic/react.png" alt="react-logo" id="box-2-react">
+              <img src="./pic/node-js.png" alt="node-logo" id="box-2-node">
+              <img src="./pic/mongodb.png" alt="mongo-logo" id="box-2-mongo">
+              <img src="./pic/express.png" alt="express-logo" id="box-2-express">
+              <img src="./pic/java.png" alt="java-logo" id="box-2-java">
+            </div>
+        </div>
+
+        <div class="box-3-whole">
+          <div id="box-3">
+            <div id="box-3-container">
+              <h1>Testing Framework</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium porro aliquid veniam? Ea recusandae consequuntur nesciunt consequatur aut minima neque odit eius nihil, accusantium modi a, ullam laborum eligendi sed sapiente atque blanditiis repellendus similique nemo quod ratione, obcaecati optio deleniti? In autem, perspiciatis molestiae vitae facere nihil unde qui.</p>
+              <button onclick="xxxx">View Projet</button>
+            </div>
+          </div>
+          <div class="box-3-logos">
+            <img src="./pic/jest.png" alt="jest-logo" id="box-3-jest">
+            <img src="./pic/mocha.png" alt="mocha-logo" id="box-3-mocha">
+          </div>
+        </div>
+
+        <img src="./pic/javascript.png" alt="js-image" id="js-mobile-background">
+      </div>
+    </div>
+
+
+    <!-- ******* PAGE 4 ******* -->
+    <div class="content4">
+        <img src="./pic/music.png" alt="music-icon" id="music-icon-1">
+        <img src="./pic/music2.png" alt="music-icon-2" id="music-icon-2">
+        <div class="guitar-info">
+          <div class="guitar-content">
+            <div id="guitar-content-h1-h2">
+              <h1>Guitarist</h1>
+              <h2>Life Interest <span>Besides Coding</span></h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nobis velit reprehenderit libero, asperiores minus eligendi nesciunt praesentium accusantium? Optio eum totam accusamus esse laudantium eius, aut ipsam iure inventore ratione molestias quae deleniti expedita veniam doloremque provident iusto veritatis qui? Minima fuga impedit consequuntur nostrum voluptatem quasi ex quod, quos odit. Quia magnam deserunt dolor iure consequatur, optio sint, nihil repellendus facilis maxime cupiditate dolorem amet incidunt enim officia voluptatum totam et perferendis necessitatibus hic in assumenda pariatur. Nam, laborum doloribus accusantium quam nobis minima molestias ex iure similique repellendus est aspernatur, dolor minus officiis, impedit culpa delectus beatae.</p>
+          </div>
+        </div>
+        <div class="guitar-image"></div>
+      </div>
+
+      <!-- ******* PAGE 5 ******* -->
+      <div class="content5">
+        <div class="chef-image"><div id="black-layer"></div></div>
+        <div class="chef-info">
+          <div class="chef-content">
+            <div id="chef-content-h1-h2">
+              <h1>Chef</h1>
+              <h2>Dream of Becoming a <span>Michelin Chef</span></h2>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum placeat unde doloremque provident officiis quos. Esse distinctio eligendi ipsum? Maxime blanditiis voluptatum soluta voluptate dolor. Consectetur minus mollitia repellat aperiam doloribus corporis quidem? Ratione totam quaerat ipsum libero temporibus consectetur. Porro mollitia necessitatibus tempora animi tempore, voluptatum ullam voluptate perferendis. Impedit voluptatibus veniam blanditiis quasi, quis, labore totam amet delectus fugiat quas temporibus? Laudantium, eaque illum nemo optio debitis ducimus, sint laborum, distinctio repudiandae corrupti commodi labore dolorum ullam? Obcaecati consectetur quo officia dolor ullam dolores libero necessitatibus nesciunt, repudiandae quia, beatae explicabo corrupti facere sit est expedita vel officiis?</p>
+          </div>
+        </div>
+        <img src="./pic/chef2.png" alt="chef-logo" id="chef-logo">
+      </div>
+
+      <!-- ******* PAGE 6 ******* -->
+      <div class="content6">
+        <img src="./pic/shuttle.png" alt="shuttle-icon" id="shuttle-icon">
+        <div class="badminton-info">
+          <div class="badminton-content">
+            <div id="badminton-content-h1-h2">
+              <h1>Badminton</h1>
+              <h2>Trained for <span>5-Years</span></h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis itaque, doloribus dolore tenetur assumenda doloremque, quibusdam accusantium quisquam sequi quam odit? Ad dignissimos quos ut, aliquam hic voluptate labore debitis in dicta optio, numquam est quasi. Atque consectetur sapiente est a dicta? Ut natus fugit nesciunt culpa, incidunt corrupti deleniti dolorem ducimus excepturi, autem laborum eum quis architecto quasi est, cupiditate inventore rem aut magnam maiores commodi. Voluptates porro minus iure repellendus doloremque eaque cum consequuntur mollitia amet, suscipit officiis iusto! Ut totam minima veritatis eaque quaerat nostrum, ipsam minus unde repudiandae architecto, in dolorem dolorum expedita iusto a.</p>
+          </div>
+        </div>
+        <div class="badminton-image"></div>
+      </div>
+
+      <!-- ******* PAGE 6 ******* -->
+      <div class="content7">
+        <div class="caligraphy-icon"></div>
+        <div class="caligraphy-info">
+          <div class="caligraphy-content">
+            <div id="caligraphy-content-h1-h2">
+              <h1>Caligraphy</h1>
+              <h2>Consistently Training <span>for 10+ Years</span></h2>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto esse neque ullam labore nobis in facere vero, delectus at saepe eum est beatae molestias eligendi fuga eaque nulla. Quo minima possimus magnam architecto eum delectus ipsa repudiandae eaque, quas et tempore aut nisi accusamus blanditiis similique. Molestias eum quidem amet accusamus laboriosam a itaque nulla, quod obcaecati. Tempora a dolorum accusamus pariatur exercitationem quod ratione suscipit eligendi minus deserunt libero asperiores nostrum, nihil consectetur eos atque minima voluptates distinctio quas id laudantium magni aliquam ducimus. Incidunt quia sint fugit explicabo obcaecati quidem eum voluptas iusto voluptatem. Voluptate nesciunt aliquid nam.</p>
+          </div>
+        </div>
+        <img src="./pic/pen.png" alt="pen-icon" id="pen-icon">
+      </div>
+
+      <!-- ******* PAGE 7 ******* -->
+      <div class="content8">
+        <div class="warren-container">
+          <h1>“You have only one mind and one body for the rest of your life. It's what you do right now, today, that determines how your mind and body will operate ten, twenty, and thirty years from now."</h1>
+          <h2>-- Warren Buffet</h2>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
