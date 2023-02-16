@@ -1,0 +1,1595 @@
+/********* FONTS  *********/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#react-logo-mobile {
+  scale: 0;
+}
+
+#js-mobile-background {
+  scale: 0;
+}
+
+/********* LOADING PAGE *********/
+.loading_page {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  overflow: hidden;
+  scroll-behavior: unset;
+}
+
+#loadingText {
+  letter-spacing: 1.2rem;
+}
+
+#line {
+  height: 1px;
+  width: 30%;
+  background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(71,64,64,1) 0%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+/********* HOME PAGE *********/
+
+/***** PART 1: NAV-BAR *****/
+
+.content1 {
+  height: 100vh;
+  position: relative;
+  
+}
+
+.nav {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 5rem;
+}
+
+ul a {
+  color: black;
+  text-decoration: none;
+}
+
+#underline {
+  width: 100%;
+  height: 2px;
+  background-color: darkgrey;
+  bottom: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+
+/***** PART 2: content1 *****/
+.ImageAndTitle {
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+} 
+
+.title {
+  position: absolute;
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Oswald', sans-serif;
+  gap: 3rem;
+  background-color: transparent;
+}
+
+.title_text,
+.title_btn {
+  position: relative;
+  left: 25%;
+  top: 27%;
+}
+
+.title_text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.title_text h1 {
+  font-size: 4em;
+}
+
+
+.title_text h2 {
+  font-size: 2.5rem;
+  color:darkgray;
+}
+
+#title_name {
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+  color:black;
+}
+
+.title_text h1 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+
+#span1 {
+  color:darkgray;
+}
+#span3 {
+  color:black;
+}
+
+.title_btn {
+  max-width: 30%;
+  padding: 0.7rem 2rem;
+  background-color: transparent;
+  border-radius: 1rem;
+  border: 2px solid black;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  color: black;
+}
+
+.title_btn:hover {
+  background-color: tomato;
+  color: white;
+  transition: 700ms;
+}
+
+.npgImage {
+  position: absolute;
+  width: 50%;
+  height: 80vh;
+  right: 0;
+}
+
+#man1 {
+  position: absolute;
+  right: 12%;
+  z-index: 5;
+}
+
+.npgImage #circle {
+  position:relative;
+  width: 4rem;
+  height: 4rem;
+  background-color: tomato;
+  border: 1px solid black;
+}
+
+
+
+/***** PART 3: content2 *****/
+.content2 {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+#content2-profile {
+  width: 50%;
+  position: absolute;
+  height: 90vh;
+  background-image: url('./pic/man2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#content2-Text {
+  position: relative;
+  width: 50%;
+  height: 90vh;
+  left: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-container {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+#text-container h1 {
+  font-size: 4em;
+}
+
+#text-container h2 {
+  font-size: 2em;
+}
+
+#text-container p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1em;
+}
+
+#text-container span {
+  color: darkgray;
+}
+
+/***** PART 4: content3 *****/
+.content3 {
+  height: 200vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+.content3-container {
+  width: 88%;
+  position: relative;
+  height: 92.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+#content3_title {
+  font-size: 4rem;
+}
+
+#content3_title span {
+  color: darkgrey;
+}
+
+#box-1, 
+#box-2,
+#box-3 {
+  position: relative;
+  width:85%;
+  height:45vh;
+  background-image: url('./pic/gray-background.jpg');
+  background-position: 50% 65%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow:0px 5px 15px rgba(0,0,0,0.22);
+  transform: translateX(30px);
+  display: flex;
+  align-items: center;
+}
+
+#box-2 {
+  background-image: url('./pic/gray-background-2.jpg');
+  background-position: 80% 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#box-3 {
+  background-image: url('./pic/gray-background-3.jpg');
+  background-position: 20% 55%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#box-1-container,
+#box-2-container,
+#box-3-container {
+  position: absolute;
+  height: 85%;
+  width: 40%;
+  background-color: transparent;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.8rem;
+  padding: 2rem;
+  color: rgba(0,0,0,0.6)
+}
+
+#box-1-container button,
+#box-2-container button,
+#box-3-container button {
+  width: 50%;
+  border: 2px solid white;
+  background-color: rgba(0,0,0,0.32);
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+#box-1::before,
+#box-2::before,
+#box-3::before {
+  content: '';
+  height: 45vh;
+  width: 15px;
+  position: absolute;
+  background-color: rgba(0,0,0,0.6);
+  box-shadow:0px 5px 15px rgba(0,0,0,0.22);
+  transform: translateX(-30px);
+  border-radius: 0.2rem;
+}
+
+.box-1-whole,
+.box-2-whole,
+.box-3-whole {
+  display: flex;
+  flex-direction: row;
+  height:24.3%;
+  gap: 2rem;
+}
+
+.logos,
+.box-2-logos,
+.box-3-logos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  width: 15%;
+  right: 0;
+  justify-content: center;
+  margin-top: -2%;
+}
+
+#box-1-react,
+#css-logo,
+#html-logo,
+#js-logo, 
+#gsap-logo,
+#box-2-react, 
+#box-2-node,
+#box-2-mongo,
+#box-2-express,
+#box-2-java,
+#box-3-jest,
+#box-3-mocha {
+  width: 5rem;
+  margin-left: 20%;
+}
+
+#css-logo {
+  width: 3.9rem;
+  margin-left: 23%;
+}
+
+#html-logo {
+  width: 4.5rem;
+  margin-left: 20%;
+}
+
+#gsap-logo {
+  width: 4.5rem;
+  margin-left: 15%;
+}
+
+#js-logo {
+  width: 4.6rem;
+}
+
+#box-2-node {
+  width: 4rem;
+  margin-left: 25%;
+}
+
+#box-2-express {
+  width: 4rem;
+  margin-left: 21%;
+}
+
+#box-2-java {
+  margin-left: 19%;
+}
+
+#box-3-jest {
+  width: 4rem;
+}
+
+#box-3-mocha {
+  width: 4rem;
+  margin-top: 1.5rem;
+}
+
+#box-1-container button,
+#box-2-container button,
+#box-3-container button {
+  cursor: pointer;
+}
+
+#box-1-container button:hover,
+#box-2-container button:hover,
+#box-3-container button:hover {
+  background-color: rgba(0,0,0,0.7);
+  transition: 700ms;
+}
+
+
+/***** PART 5: content4 *****/
+.content4 {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#music-icon-1 {
+  width: 25rem;
+  height: 25rem;
+  transform: rotate(-25deg);
+  opacity: 0.1;
+  margin-left: -5%;
+  transform-origin: center;
+}
+
+#music-icon-2 {
+  width: 25rem;
+  height: 25rem;
+  opacity: 0.1;
+  margin-top: 5%;
+  transform: rotate(25deg);
+  transform-origin: center;
+}
+
+.guitar-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 50%;
+  height: 90vh;
+  left: 0;
+  position: absolute;
+  background-color: transparent;
+}
+
+.guitar-content {
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: transparent;
+  font-family: 'Oswald', sans-serif;
+  padding: 2rem;
+}
+
+.guitar-content h1 {
+  font-size: 4rem;
+  color: black;
+}
+
+#guitar-content-h1-h2 span{
+  color: darkgray;
+}
+
+.guitar-content h2 {
+  font-size: 2rem;
+  color: black;
+}
+
+.guitar-image {
+  width: 50%;
+  height: 90vh;
+  right: 0;
+  position: absolute;
+  background-image: url('./pic/guitar2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/***** PART 6: content5 *****/
+.content5 {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.chef-image {
+  width: 50%;
+  height:90vh;
+  left: 0;
+  position: absolute;
+  background-image: url('./pic/chef.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#black-layer {
+  width: 100%;
+  height:90vh;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  background-color: black;
+  opacity: 0.2;
+}
+
+.chef-info {
+  width: 50%;
+  height: 90vh;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.chef-content {
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: transparent;
+  font-family: 'Oswald', sans-serif;
+  padding: 2rem;
+}
+
+.chef-content h1 {
+  font-size: 4rem;
+  color: black;
+}
+
+#chef-content-h1-h2 span{
+  color: darkgray;
+}
+
+.chef-content h2 {
+  font-size: 2rem;
+  color: black;
+}
+
+#chef-logo {
+  position: absolute;
+  right: 0;
+  opacity: 0.1;
+  transform: rotate(25deg);
+}
+
+/***** PART 7: content6 *****/
+.content6 {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.badminton-info {
+  width: 50%;
+  height: 90vh;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.badminton-content {
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: transparent;
+  font-family: 'Oswald', sans-serif;
+  padding: 2rem;
+}
+
+.badminton-content h1 {
+  font-size: 4rem;
+  color: black;
+}
+
+.badminton-content h2 {
+  font-size: 2rem;
+  color: black;
+}
+
+#badminton-content-h1-h2 span{
+  color: darkgray;
+}
+
+.badminton-image {
+  width: 50%;
+  height:90vh;
+  right: 0;
+  position: absolute;
+  background-image: url('./pic/badminton.jpg');
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#shuttle-icon {
+  position: absolute;
+  left: 0;
+  opacity: 0.1;
+}
+
+/***** PART 8: content7 *****/
+.content7 {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.caligraphy-icon {
+  width: 50%;
+  height:90vh;
+  left: 0;
+  position: absolute;
+  background-image: url('./pic/caligraphy.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caligraphy-info {
+  width: 50%;
+  height: 90vh;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.caligraphy-content {
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: transparent;
+  font-family: 'Oswald', sans-serif;
+  padding: 2rem;
+}
+
+.caligraphy-content h1 {
+  font-size: 4rem;
+  color: black;
+}
+
+.caligraphy-content h2 {
+  font-size: 2rem;
+  color: black;
+}
+
+#caligraphy-content-h1-h2 span{
+  color: darkgray;
+}
+
+#pen-icon {
+  right: 0;
+  position: absolute;
+  opacity: 0.1;
+  width: 30%;
+  margin-right: 2%;
+}
+
+/***** PART 9: content8 *****/
+.content8 {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.warren-container {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  gap: 0.75rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  overflow: hidden;
+  /* font-family: 'Kaushan Script', cursive;  */
+  font-family: 'Montserrat', sans-serif; 
+  color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.1);
+  animation: morph 8s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  transition: all 2s ease-in-out;
+}
+
+@keyframes morph {
+  0% {
+			border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+	} 
+	
+	50% {
+			border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+	}
+  
+	100% {
+		border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+	} 
+}
+
+.warren-container h2 {
+  font-family: 'Kaushan Script', cursive;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1400px) {
+
+  .title_text,
+  .title_btn {
+    left: 15%;
+  }
+
+  #man1 {
+    right: 0;
+  }
+}
+
+@media (max-width:1300px) {
+
+  .title_text h1 {
+    font-size: 2.8rem;
+  }
+
+  .title_text h2 {
+    font-size: 1.8rem;
+  }
+
+  #box-1-container,
+  #box-2-container,
+  #box-3-container {
+    width: 55%;
+  }
+
+  /********** Content 7 **********/
+  .caligraphy-content h2 {
+    font-size: 1.4rem;
+  }
+
+  /********** Content 8 **********/
+  .warren-container h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:1130px) {
+
+  /********** Content 1 **********/
+  .title_text,
+  .title_btn {
+    top: 20%;
+  }
+  
+  .title_text h1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #span2 {
+    margin-top: -1rem;
+  }
+
+  .title_btn {
+    max-width: 35%;
+  }
+
+  #man1 {
+    right: -10%;
+  }
+
+  /********** Content 2 **********/
+  #text-container h1 {
+    font-size: 3.5em;
+  }
+  
+  #text-container h2 {
+    font-size: 1.7em;
+  }
+  
+  #text-container p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9em;
+  }
+  
+  /********** Content 4 **********/
+  #music-icon-2 {
+    margin-top: 30%;
+    margin-left: -18%;
+  }
+
+  .guitar-content h1 {
+    font-size: 3.7rem;
+  }
+
+  .guitar-content h2 {
+    font-size: 1.6rem;
+  }
+
+  /********** Content 3 **********/
+  #box-1-container,
+  #box-2-container,
+  #box-3-container {
+    gap: 1.2rem;
+    width: 60%;
+  }
+
+  /********** Content 5 **********/
+  .chef-content h1 {
+    font-size: 3.7rem;
+  }
+
+  .chef-content h2 {
+    font-size: 1.6rem;
+  }
+
+  /********** Content 6 **********/
+  .badminton-content h1 {
+    font-size: 3.7rem;
+  }
+  
+  .badminton-content h2 {
+    font-size: 1.6rem;
+  }
+
+  /********** Content 7 **********/
+  #pen-icon {
+    margin-top: 5%;
+    margin-right: 5%;
+  } 
+
+  .caligraphy-content h1 {
+    font-size: 3.7rem;
+  }
+  
+  .caligraphy-content h2 {
+    font-size: 1.6rem;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  #box-1-container h1,
+  #box-2-container h1,
+  #box-3-container h1 {
+    font-size: 1.8rem;
+  } 
+
+  #box-1-container p,
+  #box-2-container p,
+  #box-3-container p {
+    font-size: 0.8rem;
+  } 
+
+  #box-1-container,
+  #box-2-container,
+  #box-3-container {
+    gap: 1.2rem;
+    width: 60%;
+  }
+
+  /********** Content 4 **********/
+  #music-icon-2 {
+    margin-top: 30%;
+    margin-left: -20%;
+  }
+
+  /********** Content 5 **********/
+  #chef-content-h1-h2 h2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /********** Content 6 **********/
+  #shuttle-icon {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  /********** Content 7 **********/
+  #caligraphy-content-h1-h2 h2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 915px) {
+
+  /********** Content 1 **********/
+  .ImageAndTitle {
+    flex: row-reverse;
+  }
+
+  .title {
+    right: -15%;
+  }
+
+  .title_btn {
+    max-width: 42%;
+  }
+
+  .npgImage {
+    width: 100%;
+  }
+
+  #man1 {
+    left: -17%;
+  }
+
+  #circle {
+    left: 3%;
+  }
+
+  #circle img {
+    right: -32%;
+  }
+
+  /********** Content 2 **********/
+  .content2 {
+    flex-direction: row-reverse;
+  }
+
+  #content2-Text {
+    left: 0;
+    position: absolute;
+  }
+
+  #text-container h1 {
+    font-size: 3.5em;
+  }
+  
+  #text-container h2 {
+    font-size: 1.7em;
+  }
+  
+  #text-container p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9em;
+  }
+  
+  /********** Content 4 **********/
+  #music-icon-2 {
+    display: none;
+  }
+
+  .guitar-content h1 {
+    font-size: 3.3rem;
+  }
+
+  .guitar-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .guitar-content p {
+    font-size: 0.85rem;
+  }
+
+  /********** Content 5 **********/
+  .chef-content h1 {
+    font-size: 3.3rem;
+  }
+
+  .chef-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .chef-content p {
+    font-size: 0.85rem;
+  }
+
+  #chef-logo {
+    width: 50%;
+  }
+
+   /********** Content 6 **********/
+   .badminton-content h1 {
+    font-size: 3.3rem;
+  }
+  
+  .badminton-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .badminton-content p {
+    font-size: 0.85rem;
+  }
+
+  /********** Content 7 **********/
+  .caligraphy-content h1 {
+    font-size: 3.3rem;
+  }
+  
+  .caligraphy-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .caligraphy-content p {
+    font-size: 0.85rem;
+  }
+
+  #pen-icon {
+    width: 45%;
+  } 
+
+}
+
+@media (max-width: 868px) {
+  #react-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /********** Content 1 **********/
+  .ImageAndTitle {
+    height:85vh;
+  }
+  
+  .title {
+    z-index: 6;
+    right: -9%;
+  }
+  
+  .title_text {
+    top: 15%;
+  }
+
+  .title_btn {
+    max-width: 58%;
+    top: 15%;
+  }
+
+  .npgImage {
+    width: 100%;
+    height: 85vh;
+  }
+
+  #man1 {
+    max-width: 110%;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 3rem;
+  }
+
+  /********** Content 2 **********/
+  #text-container h1 {
+    font-size: 3.2em;
+  }
+  
+  #text-container h2 {
+    font-size: 1.5em;
+  }
+  
+  #text-container p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8em;
+  }
+
+  /********** Content 3 **********/
+  #box-1-container,
+  #box-2-container,
+  #box-3-container {
+    gap: 1rem;
+    width: 85%;
+  }
+
+  /********** Content 4 **********/
+  .guitar-content h1 {
+    font-size: 3rem;
+  }
+
+  .guitar-content h2 {
+    font-size: 1rem;
+  }
+
+  .guitar-content p {
+    font-size: 0.75rem;
+  }
+
+  /********** Content 5 **********/
+  .chef-content h1 {
+    font-size: 3rem;
+  }
+
+  .chef-content h2 {
+    font-size: 1rem;
+  }
+
+  .chef-content p {
+    font-size: 0.75rem;
+  }
+
+  /********** Content 6 **********/
+  .badminton-content h1 {
+    font-size: 3rem;
+  }
+  
+  .badminton-content h2 {
+    font-size: 1rem;
+  }
+
+  .badminton-content p {
+    font-size: 0.75rem;
+  }
+
+  /********** Content 7 **********/
+  .caligraphy-content h1 {
+    font-size: 3rem;
+  }
+  
+  .caligraphy-content h2 {
+    font-size: 1rem;
+  }
+
+  .caligraphy-content p {
+    font-size: 0.75rem;
+  }
+
+  /********** Content 8 **********/
+  .warren-container h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .navbar {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .navbar ul {
+    gap: 2rem;
+  }
+
+  /********** Content 1 **********/
+  .content1 {
+    height: 70vh;
+  }
+
+  .ImageAndTitle {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow: visible;
+  }
+
+  .title {
+    width: 100%;
+    left: 0;
+    height: 50vh;
+  }
+
+  .npgImage {
+    display: none;
+  }
+
+  #react-logo-mobile {
+    scale: 1;
+    position: absolute;
+    width: 60%;
+    left: 55%;
+    bottom: 55%;
+    opacity: 60%;
+  }
+
+  /********** Content 2 **********/
+  .content2 {
+    flex-direction: column;
+    height: 125vh;
+  }
+
+  #content2-profile {
+    width: 100%;
+    top: 0;
+    height: 55vh;
+    background-position: 50% 20%;
+  }
+
+  #content2-Text {
+    width: 100%;
+    top: 44%;
+    height: 70vh;
+  }
+
+  #text-container {
+    gap: 0.5rem;
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  #text-container h1 {
+    font-size: 2.2rem;
+  }
+
+  #text-container h2 {
+    font-size: 1.1rem;
+  }
+
+  /********** Content 3 **********/
+  .content3 {
+    height: 220vh;
+    overflow: hidden;
+  }
+
+  .content3-container {
+    height: 100%;
+    position: relative;
+    gap: 2rem;
+    width: 90%;
+    padding: 1rem;
+  }
+
+  #content3_title {
+    font-size: 2.2rem;
+  }
+
+  .box-1-whole,
+  .box-2-whole,
+  .box-3-whole {
+    flex-direction: column;
+    width: 100%;
+    height: 29%;
+  }
+
+  #box-1-container,
+  #box-2-container,
+  #box-3-container {
+    height: 100%;
+    padding: 0;
+  }
+
+  #box-1,
+  #box-2,
+  #box-3 {
+    width: 100%;
+    transform: translateX(0px);
+    z-index: 3;
+    height: 50vh;
+  }
+
+  #box-1::before,
+  #box-2::before,
+  #box-3::before {
+    display: none;
+  }
+
+  .logos,
+  .box-2-logos,
+  .box-3-logos {
+    flex-direction: row;
+    width: 100%;
+    margin-top: 0;
+    gap: 1rem;
+    z-index: 3;
+  }
+
+  #box-1-react,
+  #css-logo,
+  #html-logo,
+  #js-logo, 
+  #gsap-logo,
+  #box-2-react, 
+  #box-2-node,
+  #box-2-mongo,
+  #box-2-express,
+  #box-2-java,
+  #box-3-jest,
+  #box-3-mocha {
+    margin-left: 0;
+    width: 13%;
+  }
+
+  #box-3-jest {
+    width: 2rem;
+    height: 2rem;
+    transform: translateY(1.8rem);
+  }
+
+  #js-mobile-background {
+    scale: 0.5;
+    transform: rotate(30deg);
+    position: absolute;
+    bottom: -13%;
+    left: -45%;
+    z-index: 1;
+    opacity: 55%;
+  }
+
+  /********** Content 4 **********/
+  .content4 {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .guitar-info {
+    width: 100%;
+    height: 55vh;
+  }
+
+  .guitar-image {
+    width: 100%;
+    height:45vh;
+    top: 55%;
+  }
+
+  .guitar-content {
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .guitar-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .guitar-content h2 {
+    font-size: 1.1rem;
+  }
+
+  #music-icon-1 {
+    width: 14rem;
+    height: 14rem;
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 45vh;
+    opacity: 0.2;
+  }
+
+  /********** Content 5 **********/
+  .content5 {
+    flex-direction: column;
+    height: 105vh;
+  }
+
+  .chef-image {
+    width: 100%;
+    height: 45vh;
+    position: absolute;
+    top: 57.14%;
+  }
+
+  .chef-info {
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 0;
+  }
+
+  .chef-content {
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .chef-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .chef-content h2 {
+    font-size: 1.1rem;
+  }
+
+  #chef-logo {
+    transform: rotate(-25deg);
+    left: 0;
+    opacity: 0.2;
+    width: 15rem;
+  }
+
+  /********** Content 6 **********/
+  .content6 {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .badminton-info {
+    width: 100%;
+    height: 55vh;
+    position: absolute;
+  }
+
+  .badminton-image {
+    width: 100%;
+    height: 45vh;
+    top: 55%;
+  }
+
+  .badminton-content {
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .badminton-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .badminton-content h2 {
+    font-size: 1.1rem;
+  }
+
+  #shuttle-icon {
+    position: absolute;
+    transform: rotate(85deg);
+    left: 40%;
+    opacity: 0.2;
+  }
+
+  /********** Content 7 **********/
+  .content7 {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .caligraphy-icon {
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    height: 45vh;
+  }
+
+  .caligraphy-info {
+    width: 100%;
+    position: absolute;
+    height: 55vh;
+  }
+
+  .caligraphy-content {
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+    gap: 0.6rem;
+  }
+
+  .caligraphy-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .caligraphy-content h2 {
+    font-size: 1.1rem;
+  }
+
+  #pen-icon {
+    transform: scaleX(-1);
+    left: 10%;
+    position: absolute;
+    opacity: 0.2;
+    width: 17rem;
+  }
+
+  /********** Content 8 **********/
+  .content8 {
+    height: 55vh;
+  }
+
+  .warren-container {
+    width: 90%;
+    height: 90%;
+    padding: 1rem;
+    gap: 0.6rem;
+  }
+}
+
+
+
+

@@ -1,0 +1,3863 @@
+/********* FONTS  *********/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#react-logo-mobile {
+  scale: 0;
+}
+
+#js-mobile-background {
+  scale: 0;
+}
+
+/********* LOADING PAGE *********/
+.loading_page {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  overflow: hidden;
+  scroll-behavior: unset;
+}
+
+#loadingText {
+  letter-spacing: 1.2rem;
+}
+
+#line {
+  height: 1px;
+  width: 30%;
+  background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(71,64,64,1) 0%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+/********* HOME PAGE *********/
+
+/***** PART 1: NAV-BAR *****/
+
+.content1 {
+  height: 100vh;
+  position: relative;
+}
+
+.nav {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  background-color: white;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 5rem;
+}
+
+.nav ul a {
+  color: black;
+  text-decoration: none;
+}
+
+#underline {
+  width: 100%;
+  height: 2px;
+  background-color: darkgrey;
+  bottom: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+
+/***** PART 2: content1 *****/
+.ImageAndTitle {
+  height: 80vh;
+  width: 100%;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+} 
+
+.title {
+  position: absolute;
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Oswald', sans-serif;
+  gap: 3rem;
+  background-color: transparent;
+}
+
+.title_text,
+.title_btn {
+  position: relative;
+  left: 25%;
+  top: 27%;
+}
+
+.title_text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.title_text h1 {
+  font-size: 4em;
+}
+
+
+.title_text h2 {
+  font-size: 2.5rem;
+  color:darkgray;
+}
+
+#title_name {
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+  color:black;
+}
+
+.title_text h1 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+
+#span1 {
+  color:darkgray;
+}
+#span3 {
+  color:black;
+}
+
+.title_btn {
+  max-width: 30%;
+  padding: 0.7rem 2rem;
+  background-color: transparent;
+  border-radius: 1rem;
+  border: 2px solid black;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  color: black;
+}
+
+.title_btn:hover {
+  background-color: black;
+  color: white;
+  transition: 700ms;
+}
+
+.npgImage {
+  position: absolute;
+  width: 50%;
+  height: 80vh;
+  right: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.npgImage #circle {
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+  background-image: url('../pic/emoji.png');
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+  top: 18%;
+  left: 15%;
+  z-index: 2;
+}
+
+#npgImage-images-reactlogo,
+#npgImage-images-twailwindlogo,
+#npgImage-images-jslogo,
+#npgImage-images-firebaselogo,
+#npgImage-images-sblogo,
+#npgImage-images-nodelogo,
+#npgImage-images-jestlogo {
+  position: absolute;
+  width: 5rem;
+}
+
+#npgImage-images-reactlogo {
+  left: 20%;
+  top: 15%;
+}
+
+#npgImage-images-twailwindlogo {
+  left: 35%;
+  top: 10%;
+}
+
+#npgImage-images-jslogo {
+  left: 50%;
+  top: 16%;
+}
+
+#npgImage-images-firebaselogo {
+  left: 60%;
+  top: 28%;
+}
+
+#npgImage-images-sblogo {
+  left: 60%;
+  top: 44%;
+}
+
+#npgImage-images-nodelogo {
+  left: 54%;
+  top: 61%;
+  width: 4rem;
+}
+
+#npgImage-images-jestlogo {
+  left: 40%;
+  top: 68%;
+  width: 4rem;
+}
+
+/***** PART 3: content2 *****/
+.content2 {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+#content2-profile {
+  width: 50%;
+  position: absolute;
+  height: 90vh;
+  background-image: url('../pic/Scott3.jpg');
+  background-position:10% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#content2-Text {
+  position: relative;
+  width: 50%;
+  height: 90vh;
+  left: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-container {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+#text-container h1 {
+  font-size: 4em;
+}
+
+#text-container h2 {
+  font-size: 2em;
+}
+
+#text-container p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1em;
+}
+
+#text-container span {
+  color: darkgray;
+}
+
+/***** PART 4: content3 *****/
+.content3 {
+  height: 200vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+.content3-container {
+  width: 88%;
+  position: relative;
+  height: 92.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+#content3_title {
+  font-size: 4rem;
+}
+
+#content3_title span {
+  color: darkgrey;
+}
+
+#box-1, 
+#box-2,
+#box-3 {
+  position: relative;
+  width:85%;
+  height:45vh;
+  background-image: url('../pic/gray-background.jpg');
+  background-position: 50% 65%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow:0px 5px 15px rgba(0,0,0,0.22);
+  transform: translateX(30px);
+  display: flex;
+  align-items: center;
+}
+
+#box-2 {
+  background-image: url('../pic/gray-background-2.jpg');
+  background-position: 80% 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#box-3 {
+  background-image: url('../pic/gray-background-3.jpg');
+  background-position: 20% 55%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#box-1-container,
+#box-2-container,
+#box-3-container {
+  position: absolute;
+  height: 85%;
+  width: 40%;
+  background-color: transparent;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.8rem;
+  padding: 2rem;
+  color: rgba(0,0,0,0.6)
+}
+
+#box-1-container button,
+#box-2-container button,
+#box-3-container button {
+  width: 50%;
+  border: 2px solid white;
+  background-color: rgba(0,0,0,0.32);
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+#box-1::before,
+#box-2::before,
+#box-3::before {
+  content: '';
+  height: 45vh;
+  width: 15px;
+  position: absolute;
+  background-color: rgba(0,0,0,0.6);
+  box-shadow:0px 5px 15px rgba(0,0,0,0.22);
+  transform: translateX(-30px);
+  border-radius: 0.2rem;
+}
+
+.box-1-whole,
+.box-2-whole,
+.box-3-whole {
+  display: flex;
+  flex-direction: row;
+  height:24.3%;
+  gap: 2rem;
+}
+
+.logos,
+.box-2-logos,
+.box-3-logos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  width: 15%;
+  right: 0;
+  justify-content: center;
+  margin-top: -2%;
+}
+
+#box-1-react,
+#css-logo,
+#html-logo,
+#js-logo, 
+#gsap-logo,
+#box-2-react, 
+#box-2-node,
+#box-2-mongo,
+#box-2-springboot,
+#box-2-firebase,
+#box-3-jest,
+#box-3-mocha {
+  width: 5rem;
+  margin-left: 20%;
+}
+
+#css-logo {
+  width: 3.9rem;
+  margin-left: 23%;
+}
+
+#html-logo {
+  width: 4.5rem;
+  margin-left: 20%;
+}
+
+#gsap-logo {
+  width: 4.5rem;
+  margin-left: 15%;
+}
+
+#js-logo {
+  width: 4.6rem;
+}
+
+#box-2-node {
+  width: 4rem;
+  margin-left: 25%;
+}
+
+#box-2-springboot {
+  width: 4rem;
+  margin-left: 21%;
+}
+
+#box-2-firebase {
+  margin-left: 19%;
+}
+
+#box-3-jest {
+  width: 4rem;
+}
+
+#box-3-mocha {
+  width: 4rem;
+  margin-top: 1.5rem;
+}
+
+#box-1-container button,
+#box-2-container button,
+#box-3-container button {
+  cursor: pointer;
+}
+
+#box-1-container button:hover,
+#box-2-container button:hover,
+#box-3-container button:hover {
+  background-color: rgba(0,0,0,0.7);
+  transition: 700ms;
+}
+
+
+/***** PART 5: content4 *****/
+.content4 {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#music-icon-1 {
+  width: 25rem;
+  height: 25rem;
+  transform: rotate(-25deg);
+  opacity: 0.1;
+  margin-left: -5%;
+  transform-origin: center;
+}
+
+#music-icon-2 {
+  width: 25rem;
+  height: 25rem;
+  opacity: 0.1;
+  margin-top: 5%;
+  transform: rotate(25deg);
+  transform-origin: center;
+}
+
+.guitar-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 50%;
+  height: 90vh;
+  left: 0;
+  position: absolute;
+  background-color: transparent;
+}
+
+.guitar-content {
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: transparent;
+  font-family: 'Oswald', sans-serif;
+  padding: 2rem;
+}
+
+.guitar-content h1 {
+  font-size: 4rem;
+  color: black;
+}
+
+#guitar-content-h1-h2 span{
+  color: darkgray;
+}
+
+.guitar-content h2 {
+  font-size: 2rem;
+  color: black;
+}
+
+.guitar-image {
+  width: 50%;
+  height: 90vh;
+  right: 0;
+  position: absolute;
+  background-image: url('../pic/guitar2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/***** PART 6: content5 *****/
+.content5 {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.chef-image {
+  width: 50%;
+  height:90vh;
+  left: 0;
+  position: absolute;
+  background-image: url('../pic/chef.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#black-layer {
+  width: 100%;
+  height:90vh;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  background-color: black;
+  opacity: 0.2;
+}
+
+.chef-info {
+  width: 50%;
+  height: 90vh;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.chef-content {
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: transparent;
+  font-family: 'Oswald', sans-serif;
+  padding: 2rem;
+}
+
+.chef-content h1 {
+  font-size: 4rem;
+  color: black;
+}
+
+#chef-content-h1-h2 span{
+  color: darkgray;
+}
+
+.chef-content h2 {
+  font-size: 2rem;
+  color: black;
+}
+
+#chef-logo {
+  position: absolute;
+  right: 0;
+  opacity: 0.1;
+  transform: rotate(25deg);
+}
+
+/***** PART 7: content6 *****/
+.content6 {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.badminton-info {
+  width: 50%;
+  height: 90vh;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.badminton-content {
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: transparent;
+  font-family: 'Oswald', sans-serif;
+  padding: 2rem;
+}
+
+.badminton-content h1 {
+  font-size: 4rem;
+  color: black;
+}
+
+.badminton-content h2 {
+  font-size: 2rem;
+  color: black;
+}
+
+#badminton-content-h1-h2 span{
+  color: darkgray;
+}
+
+.badminton-image {
+  width: 50%;
+  height:90vh;
+  right: 0;
+  position: absolute;
+  background-image: url('../pic/badminton.jpg');
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#shuttle-icon {
+  position: absolute;
+  left: 0;
+  opacity: 0.1;
+}
+
+/***** PART 8: content7 *****/
+.content7 {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.caligraphy-icon {
+  width: 50%;
+  height:90vh;
+  left: 0;
+  position: absolute;
+  background-image: url('../pic/caligraphy.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caligraphy-info {
+  width: 50%;
+  height: 90vh;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.caligraphy-content {
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: transparent;
+  font-family: 'Oswald', sans-serif;
+  padding: 2rem;
+}
+
+.caligraphy-content h1 {
+  font-size: 4rem;
+  color: black;
+}
+
+.caligraphy-content h2 {
+  font-size: 2rem;
+  color: black;
+}
+
+#caligraphy-content-h1-h2 span{
+  color: darkgray;
+}
+
+#pen-icon {
+  right: 0;
+  position: absolute;
+  opacity: 0.1;
+  width: 30%;
+  margin-right: 2%;
+}
+
+/***** PART 9: content8 *****/
+.content8 {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.warren-container {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  gap: 0.75rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  overflow: hidden;
+  /* font-family: 'Kaushan Script', cursive;  */
+  font-family: 'Montserrat', sans-serif; 
+  color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.1);
+  animation: morph 8s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  transition: all 2s ease-in-out;
+}
+
+@keyframes morph {
+  0% {
+			border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+	} 
+	
+	50% {
+			border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+	}
+  
+	100% {
+		border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+	} 
+}
+
+.warren-container h2 {
+  font-family: 'Kaushan Script', cursive;
+}
+
+
+/*************** PROJECT PAGE ***************/
+
+/************** NAVIGARION BAR **************/
+.nav:has(.navbar-project){
+  background-color: black;
+}
+
+.project-content {
+  background-color: black;
+}
+
+.nav {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+}
+
+.navbar-project {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.navbar-project ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 5rem;
+}
+
+.navbar-project ul a {
+  color: white;
+  text-decoration: none;
+}
+
+/************** CONTENT (TITLE) **************/
+.project-title {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.project-title::before {
+  content: "";
+  width: 100%;
+  height: 20vh;
+  bottom: 0;
+  left: 0;
+  border: none;
+  background-color: white;
+  position: absolute;
+  clip-path: polygon(0 100%,100% 60%,100% 100%);
+}
+
+.project-title-content {
+  width:45%;
+  height: 95%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  bottom: 14%;
+  left: 10%;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+
+.project-icons img {
+  width: 5rem;
+}
+
+#css-white {
+  position: absolute;
+  top: 11%;
+  right: 30%;
+}
+
+#html-white {
+  position: absolute;
+  top: -2%;
+  right: 23.5%;
+}
+
+#js-white {
+  position: absolute;
+  top: 2%;
+  right: 16%;
+}
+
+#react-white {
+  position: absolute;
+  top: 25%;
+  right: 12%;
+}
+
+#gsap {
+  position: absolute;
+  top: 30%;
+  right: 22%;
+}
+
+#nodejs-white {
+  position: absolute;
+  top: 33%;
+  right: 32%;
+}
+
+.project-title-content h1{
+  font-size: 2.5rem;
+}
+
+/************** CONTENT #1 & #3 **************/
+.project-content1 {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-content1-container,
+.project-content3-container,
+.project-content5-container {
+  width: 95%;
+  height: 95%;
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.project-content1-box1,
+.project-content1-box2,
+.project-content1-box3,
+.project-content3-box1,
+.project-content3-box2,
+.project-content3-box3,
+.project-content5-box1,
+.project-content5-box2,
+.project-content5-box3 {
+  position: relative;
+  width:33.3%;
+  height:100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.project-content1-box1-video,
+.project-content1-box2-video,
+.project-content1-box3-video,
+.project-content3-box1-video,
+.project-content3-box2-video,
+.project-content3-box3-video,
+.project-content5-box1-video,
+.project-content5-box2-video,
+.project-content5-box3-video {
+  position: absolute;
+  width: 95%;
+  height: 55%;
+  background-color: black;
+  box-shadow:5px 5px 5px rgba(0,0,0,0.22);
+  border-radius: 1rem;
+  filter: grayscale(1);
+}
+
+#fv,
+#bv {
+  object-fit: fill;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#unit-testing,
+#integration-testing {
+  object-fit: fill;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.project-content1-box1-video:hover,
+.project-content1-box2-video:hover,
+.project-content1-box3-video:hover,
+.project-content3-box1-video:hover,
+.project-content3-box2-video:hover,
+.project-content3-box3-video:hover,
+.project-content5-box1-video:hover,
+.project-content5-box2-video:hover,
+.project-content5-box3-video:hover {
+  transform: translateY(-10px);
+  transition: 700ms;
+  filter: grayscale(0);
+}
+
+.project-content1-box1-text,
+.project-content1-box2-text,
+.project-content1-box3-text,
+.project-content3-box1-text,
+.project-content3-box2-text,
+.project-content3-box3-text,
+.project-content5-box1-text,
+.project-content5-box2-text,
+.project-content5-box3-text {
+  position: absolute;
+  width: 95%;
+  height: 30%;
+  top: 65%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.project-content1-box1-text p,
+.project-content1-box2-text p,
+.project-content1-box3-text p,
+.project-content3-box1-text p,
+.project-content3-box2-text p,
+.project-content3-box3-text p,
+.project-content5-box1-text p,
+.project-content5-box2-text p,
+.project-content5-box3-text p{
+  text-align: center;
+}
+
+.project-content1-box1-text-btn,
+.project-content1-box2-text-btn,
+.project-content1-box3-text-btn,
+.project-content3-box1-text-btn,
+.project-content3-box2-text-btn,
+.project-content3-box3-text-btn,
+.project-content5-box1-text-btn,
+.project-content5-box2-text-btn,
+.project-content5-box3-text-btn {
+  width: 50%;
+  padding: 0.5rem 0;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: 1.5px solid black;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: black;
+}
+
+
+/************** CONTENT #2 (TITLE) **************/
+.project-content2 {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.project-content2::before {
+  content: "";
+  width: 100%;
+  height: 20vh;
+  top: 0;
+  left: 0;
+  border: none;
+  background-color: white;
+  position: absolute;
+  clip-path: polygon(0 0,100% 0%,0% 40%);
+}
+
+.project-title-content2 {
+  width:45%;
+  height: 95%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  top: 5%;
+  right: 10%;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+
+.project-title-content2 h1{
+  font-size: 2.5rem;
+}
+
+.project-icons-content2 img {
+  width: 5rem;
+}
+
+#react-content2-white {
+  position: absolute;
+  left:11%;
+  top: 55%;
+}
+
+#node-content2-white {
+  position: absolute;
+  top: 38%;
+  left: 14%;
+}
+
+#mongo-content2-white {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+#firebase-white {
+  position: absolute;
+  top:35%;
+  left: 26%;
+}
+
+#springboot-white {
+  position: absolute;
+  top: 53%;
+  left: 30%;
+  width: 4rem;
+}
+
+
+/************** CONTENT #3 **************/
+.project-content3 {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.project-content2::after {
+  content: "";
+  width: 100%;
+  height: 20vh;
+  bottom: 0;
+  left: 0;
+  border: none;
+  background-color: white;
+  position: absolute;
+  clip-path: polygon(0 70%,100% 100%,0 100%);
+}
+
+/************** CONTENT #4 (TITLE) **************/
+.project-content4 {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-content4::before {
+  content: '';
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0%, 100% 30%);
+}
+
+.project-content4::after {
+  content: '';
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  clip-path: polygon(100% 70%, 0 100%, 100% 100%);
+}
+
+.project-title-content4 {
+  width:45%;
+  height: 95%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  left: 10%;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+
+.project-title-content4 h1{
+  font-size: 2.5rem;
+}
+
+.project-icons-content4 img {
+  width: 13rem;
+  opacity: 0.8;
+}
+
+#jest-content4-white {
+  position: absolute;
+  right: 25%;
+  top: 25%;
+  transform: rotate(-20deg);
+}
+
+#mocha-content4-white {
+  position: absolute;
+  right: 10%;
+  top: 45%;
+  transform: rotate(30deg);
+}
+
+/************** CONTENT #5 **************/
+.project-content5 {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+/************** CONTENT #6 (FOOTER) **************/
+.project-content6 {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.project-content6::before {
+  content: '';
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 0 30%);
+}
+
+.project-content6-container {
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  right: 10%;
+  top: 35%;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+#arrow-icon {
+  width: 5rem;
+}
+
+#content6-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+
+#content6-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+/************** HOVER EFFECT **************/
+.project-content1-box1-text-btn,
+.project-content1-box2-text-btn,
+.project-content1-box3-text-btn,
+.project-content3-box1-text-btn,
+.project-content3-box2-text-btn,
+.project-content3-box3-text-btn,
+.project-content5-box1-text-btn,
+.project-content5-box2-text-btn,
+.project-content5-box3-text-btn {
+  cursor: pointer;
+}
+
+.project-content1-box1-text-btn:hover,
+.project-content1-box2-text-btn:hover,
+.project-content1-box3-text-btn:hover,
+.project-content3-box1-text-btn:hover,
+.project-content3-box2-text-btn:hover,
+.project-content3-box3-text-btn:hover,
+.project-content5-box1-text-btn:hover,
+.project-content5-box2-text-btn:hover,
+.project-content5-box3-text-btn:hover {
+  background-color: black;
+  color: white;
+  transition: 700ms;
+}
+
+
+/********** ABOUT PAGE **********/
+.about-content {
+  background-color: black;
+}
+
+.nav {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+}
+
+.navbar-aboutMe {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  background-color: black;
+}
+
+.navbar-aboutMe ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 5rem;
+}
+
+.navbar-aboutMe ul a {
+  color: white;
+  text-decoration: none;
+}
+
+/*************** CONTENT #1 ***************/
+.about-content1 {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-color: white;
+  display: flex;
+}
+
+.content1-black-container {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-color: black;
+  border-radius: 0 0 80% 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-content1-profile-images {
+  width: 23rem;
+  height: 80%;
+  position: relative;
+  background-image: url("../pic/por-3.png");
+  background-position:0 -2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  border: 4px solid white;
+}
+
+.about-content1-logos {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: -1rem;
+}
+
+.about-content1-logos img {
+  position: relative;
+  width: 3rem;
+  left: 20%;
+}
+
+
+/*************** CONTENT #2 ***************/
+.about-content2 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-content2-title {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.2rem;
+  left: 8%;
+}
+
+#timeline-icon {
+  position: relative;
+  width: 5rem;
+}
+
+.about-content2-title span {
+  color: darkgray;
+}
+
+.about-content2-title h1{
+  position: relative;
+}
+
+.about-content2-info {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about-content2-info-line {
+  width: 10%;
+  height: 80vh;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.about-content2-info-content1 {
+  width: 45%;
+  height: 69vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  background-color: transparent;
+  font-family: 'Oswald', sans-serif;
+}
+
+#timeline-1 {
+  width: 70%;
+  height: 28%;
+  position: relative;
+  background-color: white;
+  border-radius: 2rem 0 2rem 2rem;
+  border: 1px solid rgba(0,0,0,0.15);
+  outline: 2px solid rgba(0,0,0,0.15);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 1rem;
+}
+
+#timeline-1-image {
+  position: relative;
+  width: 30%;
+  height: 80%;
+  background-image: url('../pic/liberty.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 6rem;
+}
+
+#timeline-1-text {
+  position: relative;
+  width: 60%;
+  height: 80%;
+  background-color:transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 0.5rem 0 1rem 0;
+}
+
+#timeline-1-text p,
+#timeline-2-text p,
+#timeline-3-text p,
+#timeline-4-text p {
+  color: rgba(0,0,0,0.6);
+}
+
+#timeline-1::before {
+  content: '26th Aug, 2014';
+  position: absolute;
+  width:fit-content;
+  height: 2rem;
+  color: darkred;
+  transform: translateY(-1.5rem);
+  left: 10%;
+  top: -5%;
+  font-weight: bold;
+}
+
+#timeline-1::after {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(0,0,0,0.95);
+  border-radius: 100%;
+  right: -16%;
+  top: 0;
+  transform: translate(50%, -50%);
+}
+
+#timeline-2 {
+  width: 70%;
+  height: 28%;
+  position: relative;
+  background-color: transparent;
+  border-radius: 2rem 0 2rem 2rem;
+  margin-top: 16%;
+  border: 1px solid rgba(0,0,0,0.15);
+  outline: 2px solid rgba(0,0,0,0.15);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#timeline-2-image {
+  position: relative;
+  width: 30%;
+  height: 80%;
+  background-image: url('../pic/shopify.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 4rem;
+}
+
+#timeline-2-text {
+  position: relative;
+  width: 60%;
+  height: 80%;
+  background-color:transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 1rem 0 1rem 0;
+}
+
+#timeline-2::before {
+  content: '26th October, 2020 ~ 2021';
+  position: absolute;
+  width:fit-content;
+  height: 2rem;
+  color: darkred;
+  transform: translateY(-1.5rem);
+  left: 10%;
+  top: -5%;
+  font-weight: bold;
+}
+
+#timeline-2::after {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(0,0,0,0.95);
+  border-radius: 100%;
+  right: -16%;
+  top: 0;
+  transform: translate(50%, -50%);
+}
+
+.about-content2-info-content2 {
+  width: 45%;
+  height: 69vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  font-family: 'Oswald', sans-serif;
+  
+}
+
+#timeline-3 {
+  width:70%;
+  height: 28%;
+  position: relative;
+  background-color: transparent;
+  border-radius: 0 2rem 2rem 2rem;
+  margin-top: 18%;
+  border: 1px solid rgba(0,0,0,0.15);
+  outline: 2px solid rgba(0,0,0,0.15);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#timeline-3-image {
+  position: relative;
+  width: 30%;
+  height: 80%;
+  background: url('../pic/graduation.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 4rem;
+}
+
+#timeline-3-text {
+  position: relative;
+  width: 60%;
+  height: 80%;
+  background-color:transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+  text-align: right;
+  padding: 0.5rem 0 1rem 0;
+}
+
+#timeline-3::before {
+  content: "28th Aug, 2018 ~ 2019";
+  position: absolute;
+  width:fit-content;
+  height: 2rem;
+  color: darkred;
+  transform: translateY(-1.5rem);
+  right: 10%;
+  top: -5%;
+  font-weight: bold;
+}
+
+#timeline-3::after {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(0,0,0,0.95);
+  border-radius: 100%;
+  left: -16%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+#timeline-4 {
+  width:70%;
+  height: 28%;
+  position: relative;
+  background-color: transparent;
+  border-radius: 0 2rem 2rem 2rem;
+  margin-top: 18%;
+  border: 1px solid rgba(0,0,0,0.15);
+  outline: 2px solid rgba(0,0,0,0.15);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+#timeline-4-image {
+  position: relative;
+  width: 30%;
+  height: 80%;
+  background: url('../pic/company.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5rem;
+}
+
+#timeline-4-text {
+  position: relative;
+  width: 60%;
+  height: 80%;
+  background-color:transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+  text-align: right;
+  padding: 0.5rem 0 1rem 0;
+}
+
+
+
+#timeline-4::before {
+  content: "28th October, 2021 ~ 2022";
+  position: absolute;
+  width:fit-content;
+  height: 2rem;
+  color: darkred;
+  transform: translateY(-1.5rem);
+  right: 10%;
+  top: -5%;
+  font-weight: bold;
+}
+
+#timeline-4::after {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(0,0,0,0.95);
+  border-radius: 100%;
+  left: -16%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+#about-line {
+  width: 6px;
+  height: 69vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.35);
+  border-radius: 2rem;;
+}
+
+#more-icon {
+  position: absolute;
+  width: 5rem;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+/*************** CONTENT #3 ***************/
+.about-content3 {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+}
+
+.about-content3-black-container {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.about-content3-title {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.2rem;
+}
+
+#part-1 {
+  width: 50%;
+  height: 20vh;
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 2rem 0;
+}
+
+#part-1::before {
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background-color: black;
+}
+
+#part-1::after {
+  content: "";
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 100%;
+  z-index: 3;
+  background-color: white;
+}
+
+#part-2 {
+  width: 50%;
+  height: 20vh;
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#part-2::before {
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 2;
+}
+
+#part-2::after {
+  content: "";
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  border-radius: 100%;
+  z-index: 3;
+}
+
+#target-icon {
+  width: 5rem;
+  height: 5rem;
+  z-index: 5;
+}
+
+#part-2 span {
+  color: rgba(128,128,128,0.75);
+}
+
+.about-content3-info {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-color: black;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.about-content3-info::before {
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.about-content3-info::after {
+  content: "";
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  background-color: black;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  border-radius: 100%;
+}
+
+#about-content3-info-container1,
+#about-content3-info-container2,
+#about-content3-info-container3,
+#about-content3-info-container4 {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 0 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 4;
+}
+
+#career-logo,
+#innovation-logo,
+#About-chef-logo,
+#guitar-logo {
+  width: 4rem;
+}
+
+#about-content3-info-container1-logo,
+#about-content3-info-container2-logo,
+#about-content3-info-container3-logo,
+#about-content3-info-container4-logo {
+  width: 100%;
+  height: 30%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#about-content3-info-container1-text,
+#about-content3-info-container2-text,
+#about-content3-info-container3-text,
+#about-content3-info-container4-text {
+  width: 100%;
+  height: 70%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: scroll;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+
+/*************** CONTENT #4 ***************/
+.about-content4 {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+}
+
+.about-content4-title {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items:flex-end;
+  gap: 2rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.2rem;
+  left: 8%;
+}
+
+#brain-icon {
+  position: relative;
+  width: 5rem;
+}
+
+.about-content4-title span {
+  color: darkgray;
+}
+
+.about-content4-title h1{
+  position: relative;
+}
+
+.about-content4-info {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content4-info-container {
+  width: 75%;
+  height: 100%;
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 1.5rem;
+}
+
+.about-content4-info-container h2 {
+  font-family: 'Kaushan Script', cursive;
+}
+
+@media (max-width:1620px) {
+
+  #npgImage-images-jslogo {
+    left: 52%;
+    top: 16%;
+  }
+
+  #npgImage-images-firebaselogo {
+    left: 63%;
+    top: 28%;
+  }
+
+  #npgImage-images-sblogo {
+    left: 63%;
+    top: 45%;
+  }
+  
+}
+
+@media (max-width: 1500px) {
+
+  #npgImage-images-twailwindlogo {
+    left: 38%;
+    top: 10%;
+  }
+  #npgImage-images-jslogo {
+    left: 55%;
+    top: 16%;
+  }
+  
+  #npgImage-images-firebaselogo {
+    left: 67%;
+    top: 30%;
+  }
+  
+  #npgImage-images-sblogo {
+    left: 67%;
+    top: 48%;
+  }
+  
+  #npgImage-images-nodelogo {
+    left: 57%;
+    top: 64%;
+    width: 4rem;
+  }
+  
+  #npgImage-images-jestlogo {
+    left: 41%;
+    top: 70%;
+    width: 4rem;
+  }
+}
+
+@media (max-width:1450px) {
+  /********** ABOUT PAGE **********/
+  .about-content2-title,
+  .about-content3-title,
+  .about-content4-title {
+    font-size: 1.8rem;
+  }
+
+  #timeline-1,
+  #timeline-2,
+  #timeline-3,
+  #timeline-4 {
+    width: 85%;
+    height: 35%;
+  }
+
+  #timeline-1::after,
+  #timeline-2::after {
+    right: -13.25%;
+  }
+
+  #timeline-3::after,
+  #timeline-4::after {
+    left: -13.25%;
+    top: 20%;
+  }
+
+  .about-content4-info-container {
+    font-size: 1.2rem;
+  }
+
+  #about-content3-info-container1,
+  #about-content3-info-container2,
+  #about-content3-info-container3,
+  #about-content3-info-container4 {
+    font-size: 0.9rem;
+  }
+
+  #brain-icon {
+    bottom: -5%;
+    z-index: 3
+  }
+}
+
+@media (max-width:1400px) {
+
+  .title_text,
+  .title_btn {
+    left: 15%;
+  }
+
+  #npgImage-images-jslogo {
+    left: 57%;
+  }
+
+  #npgImage-images-firebaselogo {
+    left: 70%;
+  }
+
+  #npgImage-images-sblogo {
+    left: 70%;
+  }
+  
+  #npgImage-images-nodelogo {
+    left: 60%;
+  }
+}
+
+@media (max-width:1300px) {
+
+  #npgImage-images-jslogo {
+    left: 59%;
+    top: 14%;
+  }
+
+  #npgImage-images-firebaselogo {
+    left: 73%;
+    top: 28%;
+  }
+
+  #npgImage-images-sblogo {
+    left: 73%;
+  }
+
+  #npgImage-images-nodelogo {
+    left: 62%;
+  }
+
+  #box-1-container,
+  #box-2-container,
+  #box-3-container {
+    width: 55%;
+  }
+
+  /********** Content 7 **********/
+  .caligraphy-content h2 {
+    font-size: 1.4rem;
+  }
+
+  /********** Content 8 **********/
+  .warren-container h1 {
+    font-size: 1.5rem;
+  }
+
+  /********** PROJECT PAGE **********/
+
+  /************** CONTENT (TITLE) **************/
+  .project-icons img {
+    width: 4.5rem;
+  }
+
+  /************** CONTENT #2 (TITLE) **************/
+  .project-icons-content2 img {
+    width: 4.5rem;
+  }
+
+  #express-content2-white {
+    width: 3.8rem;
+  }
+
+}
+
+@media (max-width:1250px) {
+
+  #npgImage-images-twailwindlogo,
+  #npgImage-images-jslogo, 
+  #npgImage-images-firebaselogo,
+  #npgImage-images-sblogo,
+  #npgImage-images-nodelogo,
+  #npgImage-images-jestlogo {
+    display: none;
+  }
+
+  #npgImage-images-reactlogo {
+    width: 20rem;
+    left: 40%;
+    top: 12%;
+    z-index: 1;
+    filter: invert(60%);
+  }
+
+  .npgImage #circle {
+    left: 5%;
+  }
+
+}
+
+@media (max-width:1130px) {
+
+  /********** Content 1 **********/
+  .title_text,
+  .title_btn {
+    top: 20%;
+    left: 35%;
+  }
+
+  .npgImage #circle {
+    left: 0;
+  }
+
+  #npgImage-images-reactlogo {
+    left: 35%;
+  }
+  
+  .title_text h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    gap: 0;
+  }
+
+  #span2 {
+    margin-top: -1rem;
+  }
+
+  .title_btn {
+    max-width: 35%;
+  }
+
+  /********** Content 2 **********/
+  #text-container h1 {
+    font-size: 3.5em;
+  }
+  
+  #text-container h2 {
+    font-size: 1.7em;
+  }
+  
+  #text-container p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9em;
+  }
+  
+  /********** Content 4 **********/
+  #music-icon-2 {
+    margin-top: 30%;
+    margin-left: -18%;
+  }
+
+  .guitar-content h1 {
+    font-size: 3.7rem;
+  }
+
+  .guitar-content h2 {
+    font-size: 1.6rem;
+  }
+
+  /********** Content 3 **********/
+  #box-1-container,
+  #box-2-container,
+  #box-3-container {
+    gap: 1.2rem;
+    width: 60%;
+  }
+
+  /********** Content 5 **********/
+  .chef-content h1 {
+    font-size: 3.7rem;
+  }
+
+  .chef-content h2 {
+    font-size: 1.6rem;
+  }
+
+  /********** Content 6 **********/
+  .badminton-content h1 {
+    font-size: 3.7rem;
+  }
+  
+  .badminton-content h2 {
+    font-size: 1.6rem;
+  }
+
+  /********** Content 7 **********/
+  #pen-icon {
+    margin-top: 5%;
+    margin-right: 5%;
+  } 
+
+  .caligraphy-content h1 {
+    font-size: 3.7rem;
+  }
+  
+  .caligraphy-content h2 {
+    font-size: 1.6rem;
+  }
+
+
+  /********** PROJECT PAGE **********/
+
+  /************** CONTENT (TITLE) **************/
+  #html-white {
+    position: absolute;
+    top: -2%;
+    right: 22%;
+  }
+
+  #js-white {
+    position: absolute;
+    top: 2%;
+    right: 13%;
+  }
+
+  #react-white {
+    position: absolute;
+    top: 25%;
+    right: 9%;
+  }
+
+  #gsap {
+    position: absolute;
+    top: 30%;
+    right: 21.5%;
+  } 
+
+  /************** CONTENT #2 (TITLE) **************/
+  #react-content2-white {
+    left: 8%;
+  }
+
+  #node-content2-white {
+    left: 11%;
+  }
+
+  #mongo-content2-white {
+    left: 19%;
+  }
+
+  /************** CONTENT #4 (TITLE) **************/
+  #mocha-content4-white {
+    right: 5%;
+  }
+
+  /************** CONTENT #1 #3 #5  **************/
+  .project-content1-box1-video,
+  .project-content1-box2-video,
+  .project-content1-box3-video,
+  .project-content3-box1-video,
+  .project-content3-box2-video,
+  .project-content3-box3-video,
+  .project-content5-box1-video,
+  .project-content5-box2-video,
+  .project-content5-box3-video {
+    height: 60%;
+  }
+
+
+  /********** ABOUT PAGE **********/
+  #part-1 {
+    width: 35%;
+  }
+
+  #part-2 {
+    width: 65%;
+  }
+
+  #about-content3-info-container1,
+  #about-content3-info-container2,
+  #about-content3-info-container3,
+  #about-content3-info-container4 {
+    font-size: 0.8rem;
+  }
+
+  #career-logo,
+  #innovation-logo,
+  #chef-logo,
+  #guitar-logo {
+  width: 3.5rem;
+  } 
+
+  #timeline-1-text h2,
+  #timeline-2-text h2,
+  #timeline-3-text h2,
+  #timeline-4-text h2 {
+    font-size: 1.2rem;
+  }
+
+  #timeline-1-text p,
+  #timeline-2-text p,
+  #timeline-3-text p,
+  #timeline-4-text p {
+    font-size: 0.8rem;
+  }
+}
+
+/********** PROJECT PAGE **********/
+@media (max-width:1010px) {
+
+  #npgImage-images-reactlogo {
+    display: none;
+  }
+
+  /************** CONTENT #6 (FOOTER) **************/
+  #arrow-icon {
+    width: 3.5rem;
+    height: 3rem;
+  }
+
+  #content6-btn {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  #box-1-container h1,
+  #box-2-container h1,
+  #box-3-container h1 {
+    font-size: 1.8rem;
+  } 
+
+  #box-1-container p,
+  #box-2-container p,
+  #box-3-container p {
+    font-size: 0.8rem;
+  } 
+
+  #box-1-container,
+  #box-2-container,
+  #box-3-container {
+    gap: 1.2rem;
+    width: 60%;
+  }
+
+  /********** Content 4 **********/
+  #music-icon-2 {
+    margin-top: 30%;
+    margin-left: -20%;
+  }
+
+  /********** Content 5 **********/
+  #chef-content-h1-h2 h2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /********** Content 6 **********/
+  #shuttle-icon {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  /********** Content 7 **********/
+  #caligraphy-content-h1-h2 h2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /********** ABOUT PAGE **********/
+  .about-content1-profile-images {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+  }
+
+  .content1-black-container {
+    gap: 2rem;
+  }
+
+  .about-content2-title,
+  .about-content3-title,
+  .about-content4-title {
+    font-size: 1.5rem;
+  }
+
+  #about-content3-info-container1-text p,
+  #about-content3-info-container2-text p,
+  #about-content3-info-container3-text p,
+  #about-content3-info-container4-text p {
+    display: none;
+  }
+
+  .about-content3-info {
+    height: 40vh;
+  }
+  
+  .about-content3 {
+    height: 60vh;
+  }
+
+  .about-content3-black-container {
+    height: 60vh;
+  }
+
+  #about-content3-info-container1-logo,
+  #about-content3-info-container2-logo,
+  #about-content3-info-container3-logo,
+  #about-content3-info-container4-logo {
+    height: 50%;
+    align-items: flex-end;
+  }
+
+  #about-content3-info-container1-text,
+  #about-content3-info-container2-text,
+  #about-content3-info-container3-text,
+  #about-content3-info-container4-text {
+    height: 50%;
+  }
+
+}
+
+@media (max-width: 915px) {
+
+  /********** Content 1 **********/
+  .ImageAndTitle {
+    flex: row-reverse;
+  }
+
+  .title {
+    right: 5%;
+  }
+
+  .title_btn {
+    max-width: 42%;
+  }
+
+  .npgImage {
+    width: 100%;
+  }
+
+  .npgImage #circle {
+    left: 10%;
+  }
+
+  /********** Content 2 **********/
+  .content2 {
+    flex-direction: row-reverse;
+  }
+
+  #content2-Text {
+    left: 0;
+    position: absolute;
+  }
+
+  #text-container h1 {
+    font-size: 3.5em;
+  }
+  
+  #text-container h2 {
+    font-size: 1.7em;
+  }
+  
+  #text-container p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9em;
+  }
+  
+  /********** Content 4 **********/
+  #music-icon-2 {
+    display: none;
+  }
+
+  .guitar-content h1 {
+    font-size: 3.3rem;
+  }
+
+  .guitar-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .guitar-content p {
+    font-size: 0.85rem;
+  }
+
+  /********** Content 5 **********/
+  .chef-content h1 {
+    font-size: 3.3rem;
+  }
+
+  .chef-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .chef-content p {
+    font-size: 0.85rem;
+  }
+
+  #chef-logo {
+    width: 50%;
+  }
+
+   /********** Content 6 **********/
+   .badminton-content h1 {
+    font-size: 3.3rem;
+  }
+  
+  .badminton-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .badminton-content p {
+    font-size: 0.85rem;
+  }
+
+  /********** Content 7 **********/
+  .caligraphy-content h1 {
+    font-size: 3.3rem;
+  }
+  
+  .caligraphy-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .caligraphy-content p {
+    font-size: 0.85rem;
+  }
+
+  #pen-icon {
+    width: 45%;
+  } 
+
+
+  /********** PROJECT PAGE **********/
+
+
+  /************** CONTENT (TITLE) **************/
+  #css-white {
+    position: absolute;
+    top: 12%;
+    right: 30%;
+  }
+
+  #html-white {
+    position: absolute;
+    top: -2%;
+    right: 20%;
+  }
+
+  #js-white {
+    position: absolute;
+    top: 2%;
+    right: 9%;
+  }
+
+  #react-white {
+    position: absolute;
+    top: 25%;
+    right: 6%;
+  }
+
+  #gsap {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+  } 
+
+  /************** CONTENT #2 (TITLE) **************/
+  #react-content2-white {
+    left: 5%;
+  }
+
+  #node-content2-white {
+    left: 8%;
+    top: 39%;
+  }
+
+  #mongo-content2-white {
+    left: 17%;
+  }
+
+  /************** CONTENT #1 #3 #5  **************/
+  .project-content1-box1-video,
+  .project-content1-box2-video,
+  .project-content1-box3-video,
+  .project-content3-box1-video,
+  .project-content3-box2-video,
+  .project-content3-box3-video,
+  .project-content5-box1-video,
+  .project-content5-box2-video,
+  .project-content5-box3-video {
+    height: 55%;
+  }
+
+  .project-content1-box1-text,
+  .project-content1-box2-text,
+  .project-content1-box3-text,
+  .project-content3-box1-text,
+  .project-content3-box2-text,
+  .project-content3-box3-text,
+  .project-content5-box1-text,
+  .project-content5-box2-text,
+  .project-content5-box3-text {
+    height: 20%;
+  }
+
+  /************** CONTENT #4 (TITLE) **************/
+  #jest-content4-white {
+    width: 10rem;
+  }
+
+  #mocha-content4-white {
+    width: 10rem;
+  }
+
+}
+
+@media (max-width: 868px) {
+
+  .npgImage #circle {
+    left: 5%;
+  }
+
+  .title {
+    right: 10%;
+  }
+  /********** PROJECT PAGE **********/
+
+  /************** CONTENT (TITLE) **************/
+  .project-icons img {
+    width: 4rem;
+  }
+
+  .project-title-content h1{
+    font-size: 2rem;
+  }
+
+  .project-title-content p {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    font-size: 1.2rem;
+  }
+
+  /************** CONTENT #2 (TITLE) **************/
+  .project-icons-content2 img {
+    width: 4rem;
+  }
+
+  #express-content2-white {
+    width: 3rem;
+  }
+
+  .project-title-content2 h1{
+    font-size: 2rem;
+  }
+
+  .project-title-content2 p {
+    font-size: 0.9rem;
+  } 
+
+  /************** CONTENT #4 (TITLE) **************/
+  .project-title-content4 h1{
+    font-size: 2rem;
+  }
+
+  .project-title-content4 p {
+    font-size: 0.9rem;
+  } 
+
+  #jest-content4-white {
+    width: 8rem;
+  }
+
+  #mocha-content4-white {
+    width: 8rem;
+  }
+
+  /************** CONTENT #6 (FOOTER) **************/
+  .project-content6-container {
+    width: 50%;
+  }
+
+
+  /********** ABOUT PAGE **********/
+  .navbar-aboutMe {
+    font-size: 1.2rem;
+  }
+
+  .about-content1-logos img {
+    left: 35%;
+    width: 2.5rem;
+  }
+
+
+  #timeline-icon,
+  #target-icon,
+  #brain-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #timeline-3::after {
+    top: 30%;
+  }
+
+  #timeline-4::after {
+    top: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /********** Content 1 **********/
+  .ImageAndTitle {
+    height:85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    display: none;
+  }
+
+  .npgImage {
+    width: 100%;
+    height: 85vh;
+  }
+
+  .nav {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 3rem;
+  }
+
+  /********** Content 2 **********/
+  #text-container h1 {
+    font-size: 3.2em;
+  }
+  
+  #text-container h2 {
+    font-size: 1.5em;
+  }
+  
+  #text-container p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8em;
+  }
+
+  /********** Content 3 **********/
+  #box-1-container,
+  #box-2-container,
+  #box-3-container {
+    gap: 1rem;
+    width: 85%;
+  }
+
+  /********** Content 4 **********/
+  .guitar-content h1 {
+    font-size: 3rem;
+  }
+
+  .guitar-content h2 {
+    font-size: 1rem;
+  }
+
+  .guitar-content p {
+    font-size: 0.75rem;
+  }
+
+  /********** Content 5 **********/
+  .chef-content h1 {
+    font-size: 3rem;
+  }
+
+  .chef-content h2 {
+    font-size: 1rem;
+  }
+
+  .chef-content p {
+    font-size: 0.75rem;
+  }
+
+  /********** Content 6 **********/
+  .badminton-content h1 {
+    font-size: 3rem;
+  }
+  
+  .badminton-content h2 {
+    font-size: 1rem;
+  }
+
+  .badminton-content p {
+    font-size: 0.75rem;
+  }
+
+  /********** Content 7 **********/
+  .caligraphy-content h1 {
+    font-size: 3rem;
+  }
+  
+  .caligraphy-content h2 {
+    font-size: 1rem;
+  }
+
+  .caligraphy-content p {
+    font-size: 0.75rem;
+  }
+
+  /********** Content 8 **********/
+  .warren-container h1 {
+    font-size: 1.3rem;
+  }
+
+
+  /********** ABOUT PAGE **********/
+  .nav ul {
+    gap: 3rem;
+  }
+
+  .about-content2-title,
+  .about-content3-title,
+  .about-content4-title {
+    font-size: 1.2rem;
+  }
+
+  .about-content2-title,
+  .about-content3-title #part-2,
+  .about-content4-title {
+    gap: 1rem;
+  }
+
+
+  .about-content3-info {
+    height: 30vh;
+    gap: 1rem;
+  }
+
+  .about-content3-black-container {
+    height: 50vh;
+  }
+
+  .about-content3 {
+    height: 50vh;
+  }
+
+  #part-2 h1 {
+    z-index: 5;
+  }
+
+  #about-content3-info-container1,
+  #about-content3-info-container2,
+  #about-content3-info-container3,
+  #about-content3-info-container4 {
+    padding: 0 1.2rem 1.2rem 1.2rem;
+    font-size: 0.6rem;
+  }
+
+  #career-logo,
+  #innovation-logo,
+  #About-chef-logo,
+  #guitar-logo {
+    width: 2.5rem;
+  }
+
+  .about-content4-title {
+    height: 15vh;
+  }
+
+  .about-content4 {
+    height: 65vh;
+  }
+
+  .about-content4-info-container {
+    font-size: 1rem;
+  }
+
+  #timeline-1,
+  #timeline-2,
+  #timeline-3,
+  #timeline-4 {
+    gap: 0;
+  }
+
+  #timeline-1::before,
+  #timeline-2::before,
+  #timeline-3::before,
+  #timeline-4::before {
+    top: -2.5%;
+  }
+
+
+  #timeline-1-text h2,
+  #timeline-2-text h2,
+  #timeline-3-text h2,
+  #timeline-4-text h2 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  #timeline-1-text p,
+  #timeline-2-text p,
+  #timeline-3-text p,
+  #timeline-4-text p {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  #timeline-1-image,
+  #timeline-4-image {
+    background-size: 4rem;
+  }
+
+  #timeline-2-image {
+    background-size: 3rem;
+  }
+
+  #timeline-3-image {
+    background-size: 3.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .nav {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .nav ul {
+    gap: 2rem;
+  }
+
+  /********** Content 1 **********/
+  .content1 {
+    height: 70vh;
+  }
+
+  .ImageAndTitle {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow: hidden;
+  }
+
+  .title {
+    width: 100%;
+    left: 0;
+    height: 50vh;
+  }
+
+  .title_btn {
+    width: 40%;
+  }
+
+  .npgImage {
+    display: none;
+  }
+
+  #react-logo-mobile {
+    scale: 1;
+    position: absolute;
+    width: 100%;
+    left: 20%;
+    bottom: 5%;
+    opacity: 20%;
+  }
+
+  /********** Content 2 **********/
+  .content2 {
+    flex-direction: column;
+    height: 125vh;
+  }
+
+  #content2-profile {
+    width: 100%;
+    top: 0;
+    height: 55vh;
+    background-position: 50% 20%;
+  }
+
+  #content2-Text {
+    width: 100%;
+    top: 44%;
+    height: 70vh;
+  }
+
+  #text-container {
+    gap: 0.5rem;
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  #text-container h1 {
+    font-size: 2.2rem;
+  }
+
+  #text-container h2 {
+    font-size: 1.1rem;
+  }
+
+  /********** Content 3 **********/
+  .content3 {
+    height: 220vh;
+    overflow: hidden;
+  }
+
+  .content3-container {
+    height: 100%;
+    position: relative;
+    gap: 2rem;
+    width: 90%;
+    padding: 1rem;
+  }
+
+  #content3_title {
+    font-size: 2.2rem;
+  }
+
+  .box-1-whole,
+  .box-2-whole,
+  .box-3-whole {
+    flex-direction: column;
+    width: 100%;
+    height: 29%;
+  }
+
+  #box-1-container,
+  #box-2-container,
+  #box-3-container {
+    height: 100%;
+    padding: 0;
+  }
+
+  #box-1,
+  #box-2,
+  #box-3 {
+    width: 100%;
+    transform: translateX(0px);
+    z-index: 3;
+    height: 50vh;
+  }
+
+  #box-1::before,
+  #box-2::before,
+  #box-3::before {
+    display: none;
+  }
+
+  .logos,
+  .box-2-logos,
+  .box-3-logos {
+    flex-direction: row;
+    width: 100%;
+    margin-top: 0;
+    gap: 1rem;
+    z-index: 3;
+  }
+
+  #box-1-react,
+  #css-logo,
+  #html-logo,
+  #js-logo, 
+  #gsap-logo,
+  #box-2-react, 
+  #box-2-node,
+  #box-2-mongo,
+  #box-2-express,
+  #box-2-java,
+  #box-3-jest,
+  #box-3-mocha {
+    margin-left: 0;
+    width: 13%;
+  }
+
+  #box-3-jest {
+    width: 2rem;
+    height: 2rem;
+    transform: translateY(1.8rem);
+  }
+
+  #js-mobile-background {
+    scale: 0.5;
+    transform: rotate(30deg);
+    position: absolute;
+    bottom: -10%;
+    left: -45%;
+    z-index: 1;
+    opacity: 55%;
+  }
+
+  /********** Content 4 **********/
+  .content4 {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .guitar-info {
+    width: 100%;
+    height: 55vh;
+  }
+
+  .guitar-image {
+    width: 100%;
+    height:45vh;
+    top: 55%;
+  }
+
+  .guitar-content {
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .guitar-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .guitar-content h2 {
+    font-size: 1.1rem;
+  }
+
+  #music-icon-1 {
+    width: 14rem;
+    height: 14rem;
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 45vh;
+    opacity: 0.2;
+  }
+
+  /********** Content 5 **********/
+  .content5 {
+    flex-direction: column;
+    height: 105vh;
+  }
+
+  .chef-image {
+    width: 100%;
+    height: 45vh;
+    position: absolute;
+    top: 57.14%;
+  }
+
+  .chef-info {
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 0;
+  }
+
+  .chef-content {
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .chef-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .chef-content h2 {
+    font-size: 1.1rem;
+  }
+
+  #chef-logo {
+    transform: rotate(-25deg);
+    left: 0;
+    opacity: 0.2;
+    width: 15rem;
+  }
+
+  /********** Content 6 **********/
+  .content6 {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .badminton-info {
+    width: 100%;
+    height: 55vh;
+    position: absolute;
+  }
+
+  .badminton-image {
+    width: 100%;
+    height: 45vh;
+    top: 55%;
+  }
+
+  .badminton-content {
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .badminton-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .badminton-content h2 {
+    font-size: 1.1rem;
+  }
+
+  #shuttle-icon {
+    position: absolute;
+    transform: rotate(85deg);
+    left: 40%;
+    opacity: 0.2;
+  }
+
+  /********** Content 7 **********/
+  .content7 {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .caligraphy-icon {
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    height: 45vh;
+  }
+
+  .caligraphy-info {
+    width: 100%;
+    position: absolute;
+    height: 55vh;
+  }
+
+  .caligraphy-content {
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+    gap: 0.6rem;
+  }
+
+  .caligraphy-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .caligraphy-content h2 {
+    font-size: 1.1rem;
+  }
+
+  #pen-icon {
+    transform: scaleX(-1);
+    left: 10%;
+    position: absolute;
+    opacity: 0.2;
+    width: 17rem;
+  }
+
+  /********** Content 8 **********/
+  .content8 {
+    height: 55vh;
+  }
+
+  .warren-container {
+    width: 90%;
+    height: 90%;
+    padding: 1rem;
+    gap: 0.6rem;
+  }
+
+  /************ PROJECT PAGE **************/
+
+  #css-white {
+    display: none;
+  }
+  
+  #html-white {
+    display: none;
+  }
+  
+  #js-white {
+    display: none;
+  }
+  
+  #react-white {
+    position: absolute;
+    width: 25rem;
+    top: -27%;
+    right: -20%;
+    opacity: 0.7;
+  }
+
+  .project-title {
+    overflow: hidden;
+  }
+  
+  #gsap {
+    display: none;
+  }
+  
+  #nodejs-white {
+    display: none;
+  }
+
+  .project-title-content h1{
+    font-size: 1.5rem;
+  }
+
+  .project-title-content p {
+    font-size: 0.7rem;
+  }
+
+  ul {
+    gap: 3rem;
+  }
+
+  /************** CONTENT #2 (TITLE) **************/
+  #react-content2-white {
+    display: none;
+  }
+
+  #mongo-content2-white {
+    display: none;
+  }
+
+  #java-content2-white {
+    display: none;
+  }
+
+  #express-content2-white {
+    display: none;
+  }
+
+  #node-content2-white {
+    width: 24rem;
+    top: -10%;
+    transform: rotate(-35deg);
+    left: -16%;
+    opacity: 0.7;
+  }
+
+  .project-content2 {
+    overflow: hidden;
+  }
+
+  .project-title-content2 h1{
+    font-size: 1.5rem;
+  }
+
+  .project-title-content2 p {
+    font-size: 0.7rem;
+  }
+
+  /************** CONTENT #4 (TITLE) **************/
+  .project-title-content4 h1{
+    font-size: 1.5rem;
+  }
+
+  .project-title-content4 p {
+    font-size: 0.7rem;
+  }
+  
+  /************** CONTENT #1 #3 #5  **************/
+  .project-content1-box1-text,
+  .project-content1-box2-text,
+  .project-content1-box3-text,
+  .project-content3-box1-text,
+  .project-content3-box2-text,
+  .project-content3-box3-text,
+  .project-content5-box1-text,
+  .project-content5-box2-text,
+  .project-content5-box3-text {
+    display: none;
+  }
+
+  .project-content1-container,
+  .project-content3-container,
+  .project-content5-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-content1-box1,
+  .project-content1-box2,
+  .project-content1-box3,
+  .project-content3-box1,
+  .project-content3-box2,
+  .project-content3-box3,
+  .project-content5-box1,
+  .project-content5-box2,
+  .project-content5-box3 {
+    width: 85%;
+  }
+
+  .project-content1-box1-video,
+  .project-content1-box2-video,
+  .project-content1-box3-video,
+  .project-content3-box1-video,
+  .project-content3-box2-video,
+  .project-content3-box3-video,
+  .project-content5-box1-video,
+  .project-content5-box2-video,
+  .project-content5-box3-video {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow:none;
+    background-color: black;
+  }
+
+
+  /********** ABOUT PAGE **********/
+  .navbar-aboutMe {
+    font-size: 1rem;
+  }
+
+  .nav ul {
+    gap: 2rem;
+  }
+
+  .about-content2 {
+    height: 115vh;
+  }
+
+  .about-content2-title {
+    height: 15vh;
+  }
+
+  .about-content2-info {
+    flex-direction: column;
+    height: 95vh;
+  }
+
+  .about-content2-info-line {
+    display: none;
+  }
+
+  .about-content2-info-content1,
+  .about-content2-info-content2 {
+    width: 100%;
+    height: 47.5vh;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  #timeline-1::after,
+  #timeline-2::after,
+  #timeline-3::after,
+  #timeline-4::after {
+    display: none;
+  }
+
+  #timeline-1::before,
+  #timeline-2::before,
+  #timeline-3::before,
+  #timeline-4::before {
+   top: 0;
+   left: 0;
+  }
+
+  #more-icon {
+    display: none;
+  }
+
+  #timeline-1,
+  #timeline-2,
+  #timeline-3,
+  #timeline-4 {
+    margin: 0;
+    height: 38%;
+    position: relative;
+    border-radius: 0.5rem;
+  }
+
+  #part-1 {
+    width: 20%;
+  }
+
+  #part-2 {
+    width: 80%;
+  }
+
+  .about-content3 {
+    height: 80vh;
+  }
+
+  .about-content3-black-container {
+    height: 80vh;
+  }
+
+  .about-content3-info {
+    height: 60vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about-content3-info-container1,
+  #about-content3-info-container2,
+  #about-content3-info-container3,
+  #about-content3-info-container4 {
+    width: 45%;
+    height: 45%;
+  }
+}
+
+@media (max-width:500px) {
+
+  /************** CONTENT (TITLE) **************/
+  #react-white {
+    width: 20rem;
+    top: -20%;
+    right: -20%;
+    opacity: 0.7;
+  }
+
+  #react-logo-mobile {
+    scale: 1;
+    position: absolute;
+    width: 130%;
+    left: 20%;
+    bottom: 15%;
+    opacity: 20%;
+  }
+
+  .navbar-project {
+    font-size: 1rem;
+  }
+
+  ul {
+    gap: 2rem;
+  }
+
+  /************** CONTENT #2 (TITLE) **************/
+  #node-content2-white {
+    width: 20rem;
+    top: -10%;
+    transform: rotate(-35deg);
+    left: -16%;
+    opacity: 0.7;
+  }
+
+  /************** CONTENT #4 (TITLE) **************/
+  #jest-content4-white {
+    transform: rotate(30deg);
+    top: 5%;
+    right: 0;
+    width: 10rem;
+  }
+
+  #mocha-content4-white {
+    transform: rotate(-40deg);
+    left: -7%;
+    top: 75%;
+    width: 10rem;
+  }
+
+  /************** CONTENT #6 (FOOTER) **************/
+  .project-content6-container {
+    width: 80%;
+  }
+
+
+  /********** ABOUT PAGE **********/
+  .about-content2-title,
+  .about-content3-title,
+  .about-content4-title {
+    font-size: 1.0rem;
+  }
+
+  #timeline-icon,
+  #target-icon,
+  #brain-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .about-content4-info-container {
+    font-size: 0.8rem;
+  }
+
+}
+
+@media (max-width:400px) {
+
+  /************** CONTENT (TITLE) **************/
+  #react-white {
+    width: 15rem;
+    top: -15%;
+    right: -20%;
+    opacity: 0.7;
+  }
+
+  .title_btn {
+    width: 50%;
+  }
+
+  .nav ul {
+    gap: 1rem;
+  }
+
+  /************** CONTENT #2 (TITLE) **************/
+  #node-content2-white {
+    width: 15rem;
+    top: -5%;
+    transform: rotate(-35deg);
+    left: -16%;
+    opacity: 0.7;
+  }
+
+  /************** CONTENT #1 #3 #5  **************/
+  .project-content1-box1,
+  .project-content1-box2,
+  .project-content1-box3,
+  .project-content3-box1,
+  .project-content3-box2,
+  .project-content3-box3,
+  .project-content5-box1,
+  .project-content5-box2,
+  .project-content5-box3 {
+    width: 90%;
+  }
+
+
+  /********** ABOUT PAGE **********/
+  .about-content1-profile-images {
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+  }
+  
+  .about-content1-logos img {
+    left: 35%;
+    width: 2rem;
+  }
+
+  #timeline-2::before,
+  #timeline-1::before,
+  #timeline-3::before,
+  #timeline-4::before {
+    top: -3%;
+  }
+
+  .navbar-aboutMe {
+    font-size: 0.8rem;
+  }
+
+}
+
+
+

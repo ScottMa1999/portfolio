@@ -1,0 +1,971 @@
+/********* FONTS  *********/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************** NAVIGARION BAR **************/
+.nav {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  background-color: black;
+}
+
+.navbar-project {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 5rem;
+}
+
+ul a {
+  color: white;
+  text-decoration: none;
+}
+
+/************** CONTENT (TITLE) **************/
+.project-title {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.project-title::before {
+  content: "";
+  width: 100%;
+  height: 20vh;
+  bottom: 0;
+  left: 0;
+  border: none;
+  background-color: white;
+  position: absolute;
+  clip-path: polygon(0 100%,100% 60%,100% 100%);
+}
+
+.project-title-content {
+  width:45%;
+  height: 95%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  bottom: 14%;
+  left: 10%;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+
+.project-icons img {
+  width: 5rem;
+}
+
+#css-white {
+  position: absolute;
+  top: 11%;
+  right: 30%;
+}
+
+#html-white {
+  position: absolute;
+  top: -2%;
+  right: 23.5%;
+}
+
+#js-white {
+  position: absolute;
+  top: 2%;
+  right: 16%;
+}
+
+#react-white {
+  position: absolute;
+  top: 25%;
+  right: 12%;
+}
+
+#gsap {
+  position: absolute;
+  top: 30%;
+  right: 22%;
+}
+
+#nodejs-white {
+  position: absolute;
+  top: 33%;
+  right: 32%;
+}
+
+.project-title-content h1{
+  font-size: 2.5rem;
+}
+
+/************** CONTENT #1 & #3 **************/
+.project-content1 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-content1-container,
+.project-content3-container,
+.project-content5-container {
+  width: 95%;
+  height: 95%;
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.project-content1-box1,
+.project-content1-box2,
+.project-content1-box3,
+.project-content3-box1,
+.project-content3-box2,
+.project-content3-box3,
+.project-content5-box1,
+.project-content5-box2,
+.project-content5-box3 {
+  position: relative;
+  width:33.3%;
+  height:100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  overflow: hidden;
+}
+
+.project-content1-box1-video,
+.project-content1-box2-video,
+.project-content1-box3-video,
+.project-content3-box1-video,
+.project-content3-box2-video,
+.project-content3-box3-video,
+.project-content5-box1-video,
+.project-content5-box2-video,
+.project-content5-box3-video {
+  position: absolute;
+  width: 95%;
+  height: 65%;
+  background-color: black;
+  box-shadow:5px 5px 5px rgba(0,0,0,0.22);
+  border-radius: 1rem;
+}
+
+.project-content1-box1-text,
+.project-content1-box2-text,
+.project-content1-box3-text,
+.project-content3-box1-text,
+.project-content3-box2-text,
+.project-content3-box3-text,
+.project-content5-box1-text,
+.project-content5-box2-text,
+.project-content5-box3-text {
+  position: absolute;
+  width: 95%;
+  height: 30%;
+  top: 65%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.project-content1-box1-text p,
+.project-content1-box2-text p,
+.project-content1-box3-text p,
+.project-content3-box1-text p,
+.project-content3-box2-text p,
+.project-content3-box3-text p,
+.project-content5-box1-text p,
+.project-content5-box2-text p,
+.project-content5-box3-text p{
+  text-align: center;
+}
+
+.project-content1-box1-text-btn,
+.project-content1-box2-text-btn,
+.project-content1-box3-text-btn,
+.project-content3-box1-text-btn,
+.project-content3-box2-text-btn,
+.project-content3-box3-text-btn,
+.project-content5-box1-text-btn,
+.project-content5-box2-text-btn,
+.project-content5-box3-text-btn {
+  width: 50%;
+  padding: 0.7rem 0;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: 1.5px solid black;
+}
+
+
+/************** CONTENT #2 (TITLE) **************/
+.project-content2 {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.project-content2::before {
+  content: "";
+  width: 100%;
+  height: 20vh;
+  top: 0;
+  left: 0;
+  border: none;
+  background-color: white;
+  position: absolute;
+  clip-path: polygon(0 0,100% 0%,0% 40%);
+}
+
+.project-title-content2 {
+  width:45%;
+  height: 95%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  top: 5%;
+  right: 10%;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+
+.project-title-content2 h1{
+  font-size: 2.5rem;
+}
+
+.project-icons-content2 img {
+  width: 5rem;
+}
+
+#react-content2-white {
+  position: absolute;
+  left:11%;
+  top: 55%;
+}
+
+#node-content2-white {
+  position: absolute;
+  top: 38%;
+  left: 14%;
+}
+
+#mongo-content2-white {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+#java-content2-white {
+  position: absolute;
+  top:35%;
+  left: 26%;
+}
+
+#express-content2-white {
+  position: absolute;
+  top: 53%;
+  left: 30%;
+  width: 4rem;
+}
+
+
+/************** CONTENT #3 **************/
+.project-content3 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.project-content2::after {
+  content: "";
+  width: 100%;
+  height: 20vh;
+  bottom: 0;
+  left: 0;
+  border: none;
+  background-color: white;
+  position: absolute;
+  clip-path: polygon(0 70%,100% 100%,0 100%);
+}
+
+/************** CONTENT #4 (TITLE) **************/
+.project-content4 {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-content4::before {
+  content: '';
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0%, 100% 30%);
+}
+
+.project-content4::after {
+  content: '';
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  clip-path: polygon(100% 70%, 0 100%, 100% 100%);
+}
+
+.project-title-content4 {
+  width:45%;
+  height: 95%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  left: 10%;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+
+.project-title-content4 h1{
+  font-size: 2.5rem;
+}
+
+.project-icons-content4 img {
+  width: 13rem;
+  opacity: 0.8;
+}
+
+#jest-content4-white {
+  position: absolute;
+  right: 25%;
+  top: 25%;
+  transform: rotate(-20deg);
+}
+
+#mocha-content4-white {
+  position: absolute;
+  right: 10%;
+  top: 45%;
+  transform: rotate(30deg);
+}
+
+/************** CONTENT #5 **************/
+.project-content5 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+/************** CONTENT #6 (FOOTER) **************/
+.project-content6 {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.project-content6::before {
+  content: '';
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 0 30%);
+}
+
+.project-content6-container {
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  right: 10%;
+  top: 35%;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+#arrow-icon {
+  width: 5rem;
+}
+
+#content6-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+
+#content6-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+/************** HOVER EFFECT **************/
+.project-content1-box1-text-btn,
+.project-content1-box2-text-btn,
+.project-content1-box3-text-btn,
+.project-content3-box1-text-btn,
+.project-content3-box2-text-btn,
+.project-content3-box3-text-btn,
+.project-content5-box1-text-btn,
+.project-content5-box2-text-btn,
+.project-content5-box3-text-btn {
+  cursor: pointer;
+}
+
+.project-content1-box1-text-btn:hover,
+.project-content1-box2-text-btn:hover,
+.project-content1-box3-text-btn:hover,
+.project-content3-box1-text-btn:hover,
+.project-content3-box2-text-btn:hover,
+.project-content3-box3-text-btn:hover,
+.project-content5-box1-text-btn:hover,
+.project-content5-box2-text-btn:hover,
+.project-content5-box3-text-btn:hover {
+  background-color: black;
+  color: white;
+  transition: 700ms;
+}
+
+/************** MEDIA QUERY **************/
+@media (max-width:1300px) {
+
+  /************** CONTENT (TITLE) **************/
+  .project-icons img {
+    width: 4.5rem;
+  }
+
+  /************** CONTENT #2 (TITLE) **************/
+  .project-icons-content2 img {
+    width: 4.5rem;
+  }
+
+  #express-content2-white {
+    width: 3.8rem;
+  }
+
+}
+
+
+@media (max-width:1130px) {
+
+  /************** CONTENT (TITLE) **************/
+  #html-white {
+    position: absolute;
+    top: -2%;
+    right: 22%;
+  }
+
+  #js-white {
+    position: absolute;
+    top: 2%;
+    right: 13%;
+  }
+
+  #react-white {
+    position: absolute;
+    top: 25%;
+    right: 9%;
+  }
+
+  #gsap {
+    position: absolute;
+    top: 30%;
+    right: 21.5%;
+  } 
+
+  /************** CONTENT #2 (TITLE) **************/
+  #react-content2-white {
+    left: 8%;
+  }
+
+  #node-content2-white {
+    left: 11%;
+  }
+
+  #mongo-content2-white {
+    left: 19%;
+  }
+
+  /************** CONTENT #4 (TITLE) **************/
+  #mocha-content4-white {
+    right: 5%;
+  }
+
+  /************** CONTENT #1 #3 #5  **************/
+  .project-content1-box1-video,
+  .project-content1-box2-video,
+  .project-content1-box3-video,
+  .project-content3-box1-video,
+  .project-content3-box2-video,
+  .project-content3-box3-video,
+  .project-content5-box1-video,
+  .project-content5-box2-video,
+  .project-content5-box3-video {
+    height: 60%;
+  }
+
+}
+
+@media (max-width:1010px) {
+
+  /************** CONTENT #6 (FOOTER) **************/
+  #arrow-icon {
+    width: 3.5rem;
+    height: 3rem;
+  }
+
+  #content6-btn {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width:915px) {
+
+  /************** CONTENT (TITLE) **************/
+  #css-white {
+    position: absolute;
+    top: 12%;
+    right: 30%;
+  }
+
+  #html-white {
+    position: absolute;
+    top: -2%;
+    right: 20%;
+  }
+
+  #js-white {
+    position: absolute;
+    top: 2%;
+    right: 9%;
+  }
+
+  #react-white {
+    position: absolute;
+    top: 25%;
+    right: 6%;
+  }
+
+  #gsap {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+  } 
+
+  /************** CONTENT #2 (TITLE) **************/
+  #react-content2-white {
+    left: 5%;
+  }
+
+  #node-content2-white {
+    left: 8%;
+    top: 39%;
+  }
+
+  #mongo-content2-white {
+    left: 17%;
+  }
+
+  /************** CONTENT #1 #3 #5  **************/
+  .project-content1-box1-video,
+  .project-content1-box2-video,
+  .project-content1-box3-video,
+  .project-content3-box1-video,
+  .project-content3-box2-video,
+  .project-content3-box3-video,
+  .project-content5-box1-video,
+  .project-content5-box2-video,
+  .project-content5-box3-video {
+    height: 55%;
+  }
+
+  .project-content1-box1-text,
+  .project-content1-box2-text,
+  .project-content1-box3-text,
+  .project-content3-box1-text,
+  .project-content3-box2-text,
+  .project-content3-box3-text,
+  .project-content5-box1-text,
+  .project-content5-box2-text,
+  .project-content5-box3-text {
+    height: 20%;
+  }
+
+  /************** CONTENT #4 (TITLE) **************/
+  #jest-content4-white {
+    width: 10rem;
+  }
+
+  #mocha-content4-white {
+    width: 10rem;
+  }
+}
+
+@media (max-width:868px) {
+
+  /************** CONTENT (TITLE) **************/
+  .project-icons img {
+    width: 4rem;
+  }
+
+  .project-title-content h1{
+    font-size: 2rem;
+  }
+
+  .project-title-content p {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    font-size: 1.2rem;
+  }
+
+  /************** CONTENT #2 (TITLE) **************/
+  .project-icons-content2 img {
+    width: 4rem;
+  }
+
+  #express-content2-white {
+    width: 3rem;
+  }
+
+  .project-title-content2 h1{
+    font-size: 2rem;
+  }
+
+  .project-title-content2 p {
+    font-size: 0.9rem;
+  } 
+
+  /************** CONTENT #4 (TITLE) **************/
+  .project-title-content4 h1{
+    font-size: 2rem;
+  }
+
+  .project-title-content4 p {
+    font-size: 0.9rem;
+  } 
+
+  #jest-content4-white {
+    width: 8rem;
+  }
+
+  #mocha-content4-white {
+    width: 8rem;
+  }
+
+  /************** CONTENT #6 (FOOTER) **************/
+  .project-content6-container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  /************** CONTENT (TITLE) **************/
+  #css-white {
+    display: none;
+  }
+  
+  #html-white {
+    display: none;
+  }
+  
+  #js-white {
+    display: none;
+  }
+  
+  #react-white {
+    position: absolute;
+    width: 25rem;
+    top: -27%;
+    right: -20%;
+    opacity: 0.7;
+  }
+
+  .project-title {
+    overflow: hidden;
+  }
+  
+  #gsap {
+    display: none;
+  }
+  
+  #nodejs-white {
+    display: none;
+  }
+
+  .project-title-content h1{
+    font-size: 1.5rem;
+  }
+
+  .project-title-content p {
+    font-size: 0.7rem;
+  }
+
+  ul {
+    gap: 3rem;
+  }
+
+  /************** CONTENT #2 (TITLE) **************/
+  #react-content2-white {
+    display: none;
+  }
+
+  #mongo-content2-white {
+    display: none;
+  }
+
+  #java-content2-white {
+    display: none;
+  }
+
+  #express-content2-white {
+    display: none;
+  }
+
+  #node-content2-white {
+    width: 24rem;
+    top: -10%;
+    transform: rotate(-35deg);
+    left: -16%;
+    opacity: 0.7;
+  }
+
+  .project-content2 {
+    overflow: hidden;
+  }
+
+  .project-title-content2 h1{
+    font-size: 1.5rem;
+  }
+
+  .project-title-content2 p {
+    font-size: 0.7rem;
+  }
+
+  /************** CONTENT #4 (TITLE) **************/
+  .project-title-content4 h1{
+    font-size: 1.5rem;
+  }
+
+  .project-title-content4 p {
+    font-size: 0.7rem;
+  }
+  
+  /************** CONTENT #1 #3 #5  **************/
+  .project-content1-box1-text,
+  .project-content1-box2-text,
+  .project-content1-box3-text,
+  .project-content3-box1-text,
+  .project-content3-box2-text,
+  .project-content3-box3-text,
+  .project-content5-box1-text,
+  .project-content5-box2-text,
+  .project-content5-box3-text {
+    display: none;
+  }
+
+  .project-content1-container,
+  .project-content3-container,
+  .project-content5-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-content1-box1,
+  .project-content1-box2,
+  .project-content1-box3,
+  .project-content3-box1,
+  .project-content3-box2,
+  .project-content3-box3,
+  .project-content5-box1,
+  .project-content5-box2,
+  .project-content5-box3 {
+    width: 85%;
+  }
+
+  .project-content1-box1-video,
+  .project-content1-box2-video,
+  .project-content1-box3-video,
+  .project-content3-box1-video,
+  .project-content3-box2-video,
+  .project-content3-box3-video,
+  .project-content5-box1-video,
+  .project-content5-box2-video,
+  .project-content5-box3-video {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow:none;
+    background-color: black;
+  }
+}
+
+@media (max-width:500px) {
+
+  /************** CONTENT (TITLE) **************/
+  #react-white {
+    width: 20rem;
+    top: -20%;
+    right: -20%;
+    opacity: 0.7;
+  }
+
+  .navbar-project {
+    font-size: 1rem;
+  }
+
+  ul {
+    gap: 2rem;
+  }
+
+  /************** CONTENT #2 (TITLE) **************/
+  #node-content2-white {
+    width: 20rem;
+    top: -10%;
+    transform: rotate(-35deg);
+    left: -16%;
+    opacity: 0.7;
+  }
+
+  /************** CONTENT #4 (TITLE) **************/
+  #jest-content4-white {
+    transform: rotate(30deg);
+    top: 5%;
+    right: 0;
+    width: 10rem;
+  }
+
+  #mocha-content4-white {
+    transform: rotate(-40deg);
+    left: -7%;
+    top: 75%;
+    width: 10rem;
+  }
+
+  /************** CONTENT #6 (FOOTER) **************/
+  .project-content6-container {
+    width: 80%;
+  }
+}
+
+@media (max-width:400px) {
+
+  /************** CONTENT (TITLE) **************/
+  #react-white {
+    width: 15rem;
+    top: -15%;
+    right: -20%;
+    opacity: 0.7;
+  }
+
+  ul {
+    gap: 1.5rem;
+  }
+
+  /************** CONTENT #2 (TITLE) **************/
+  #node-content2-white {
+    width: 15rem;
+    top: -5%;
+    transform: rotate(-35deg);
+    left: -16%;
+    opacity: 0.7;
+  }
+
+  /************** CONTENT #1 #3 #5  **************/
+  .project-content1-box1,
+  .project-content1-box2,
+  .project-content1-box3,
+  .project-content3-box1,
+  .project-content3-box2,
+  .project-content3-box3,
+  .project-content5-box1,
+  .project-content5-box2,
+  .project-content5-box3 {
+    width: 90%;
+  }
+
+}
