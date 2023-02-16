@@ -1,0 +1,179 @@
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/********* FONTS  *********/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+/************** NAVIGATION **************/
+.nav {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/************** NAVIGATION (GSAP) **************/
+#underline {
+  width: 100%;
+  height: 2px;
+  background-color: darkgrey;
+  bottom: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+
+/************** CONTENT **************/
+.content {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  background-color: bisque;
+}
+
+.text {
+  position: absolute;
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Oswald', sans-serif;
+  gap: 3rem;
+  background-color: yellow;
+}
+
+.title {
+  position: relative;
+  left: 25%;
+  top: 27%;
+}
+
+
+
+/************** CONTENT #1 **************/
+
+.content1 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-1 {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: lightcoral;
+}
+
+.text-1 {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-color: lightcyan;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem;
+}
+
+.content2 {
+  width: 100%;
+  height: 120vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+  overflow: hidden;
+}
+
+.content2 h1 {
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+.sliders {
+  width: 100%;
+  height: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: yellow;
+  padding: 5rem 5rem 5rem 0;
+  gap: 3rem;
+}
+
+.sliders .slider {
+  width: 100%;
+  height: 30%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.content3 {
+  width: 100%;
+  height:80vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.text-3 {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.profile-3 {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: lightgreen;
+}

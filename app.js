@@ -1,17 +1,23 @@
 const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
-const comment = require('./models/comments')
+const comment = require('./models/comments');
 const app = express();
+require("dotenv").config();
 
 // ********* VIEW ENGINE SET UP ********* //
 app.set('view engine','ejs');
 
 // ********* CONNECTING TO MANGODB ********* //
-const URI = "mongodb+srv://Tianyi:990610@cluster0.cfufopm.mongodb.net/?retryWrites=true&w=majority";
+const URI = process.env.DATABASE_URL;
 
-mongoose.connect(URI)
-.then((result) => app.listen(3000))
+const config = {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}
+
+mongoose.connect(URI, config)
+.then((result) => app.listen(process.env.PORT))
 .catch((err) => console.log(err));
 
 // ********* MIDDLEWARE CONNECTION ********** //
