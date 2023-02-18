@@ -61,7 +61,7 @@ const scrollTrigger_timeline2 = gsap.timeline({scrollTrigger:{
 }})
 .from('.project-content3-container li',{
   opacity:0,
-  stagger: 0.4
+  duration: 2
 })
 
 const scrollTrigger_timeline3 = gsap.timeline({scrollTrigger:{
@@ -94,7 +94,7 @@ const scrollTrigger_timeline4 = gsap.timeline({scrollTrigger:{
 }})
 .from('.project-content5-container li',{
   opacity:0,
-  stagger: 0.4
+  duration: 2
 })
 
 const scrollTrigger_timeline5 = gsap.timeline({scrollTrigger:{
