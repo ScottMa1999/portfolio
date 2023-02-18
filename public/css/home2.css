@@ -3859,5 +3859,379 @@
 
 }
 
+@media (min-width:1900px) and (min-height:1000px) {
+
+  .npgImage #circle {
+    top:20%;
+    left:17%; 
+  }
+
+}
+
+@media (min-width:2400px) and (min-height:1340px) {
+
+  .npgImage #circle {
+    top: 25%;
+    left: 20%;
+  }
+
+  #npgImage-images-reactlogo,
+  #npgImage-images-twailwindlogo,
+  #npgImage-images-jslogo,
+  #npgImage-images-firebaselogo,
+  #npgImage-images-sblogo {
+    width: 8rem;
+  }
+
+  #npgImage-images-nodelogo,
+  #npgImage-images-jestlogo {
+    width: 7rem;
+  }
+
+  .npgImage #circle {
+    top: 27%;
+    left: 22%;
+  }
+
+  .title_text #title_name {
+    font-size: 3.5rem;
+  }
+
+  .title_text #developer_text {
+    font-size: 6rem;
+  }
+
+  .title_text #designer_text {
+    font-size: 4.5rem;
+  }
+
+  .title .title_btn {
+    padding: 1.5rem 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .nav a {
+    font-size: 2.5rem;
+  }
+
+  .nav ul {
+    gap: 8rem;
+  }
+
+  .content2 #text-container h1 {
+    font-size: 7rem;
+  }
+
+  .content2 #text-container h2 {
+    font-size: 3.5rem;
+  }
+
+  .content2 #text-container  p {
+    font-size: 2rem;
+  }
+
+  .content3 #content3_title {
+    font-size: 7rem;
+  }
+
+  .content3-container {
+    gap: 8rem;
+  }
+
+  .box-1-whole #box-1-container h1,
+  .box-2-whole #box-2-container h1, 
+  .box-3-whole #box-3-container h1 {
+    font-size: 4rem;
+  }
+
+  .box-1-whole #box-1-container p,
+  .box-2-whole #box-2-container p, 
+  .box-3-whole #box-3-container p {
+    font-size: 1.5rem;
+  }
+
+  .box-1-whole #box-1-container button,
+  .box-2-whole #box-2-container button, 
+  .box-3-whole #box-3-container button {
+    font-size: 1.5rem;
+    padding: 1.3rem 2.5rem;
+  }
+
+  #box-1-react,
+  #css-logo,
+  #html-logo,
+  #js-logo, 
+  #gsap-logo,
+  #box-2-react, 
+  #box-2-mongo,
+  #box-2-springboot,
+  #box-2-firebase {
+    width: 7rem;
+  }
+
+  #css-logo {
+    width: 5.9rem;
+  }
+
+  #box-2-node {
+    width: 5.9rem;
+  }
+
+  #box-3-jest,
+  #box-3-mocha {
+    width: 5.9rem;
+  }
+
+  #guitar-content-h1-h2 h1,
+  #chef-content-h1-h2 h1,
+  #badminton-content-h1-h2 h1,
+  #caligraphy-content-h1-h2 h1 {
+    font-size: 6rem;
+  }
+
+  #guitar-content-h1-h2 h2,
+  #chef-content-h1-h2 h2,
+  #badminton-content-h1-h2 h2,
+  #caligraphy-content-h1-h2 h2 {
+    font-size: 3rem;;
+  }
+
+  .guitar-content p,
+  .chef-content p,
+  .badminton-content p,
+  .caligraphy-content p {
+    font-size: 2rem;
+  }
+
+  .warren-container h1 {
+    font-size: 3rem;
+  }
+
+  .warren-container h2 {
+    font-size: 3.5rem;
+  }
+
+  .about-content1-profile-images {
+    width: 35rem;
+  }
+
+  .about-content1-logos img {
+    width: 4.5rem;
+  }
+
+  .about-content1-logos {
+    gap: 1.5rem;
+  }
+
+  .about-content2-title #timeline-icon {
+    width: 11rem;
+  }
+
+  #target-icon,
+  #brain-icon {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .about-content2-title h1,
+  .about-content3-title #part-2 h1,
+  .about-content4-title h1 {
+    font-size: 5rem;
+  }
+
+  .about-content4-title {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  .about-content4-info-container h3 {
+    font-size: 3rem;
+  }
+
+  .about-content4-info-container h2 {
+    font-size: 4rem;
+  }
+
+  .about-content4 {
+    height: 90vh;
+  }
+
+  #timeline-1-image,
+  #timeline-4-image {
+    background-size: 10rem;
+  }
+
+  #timeline-2-image,
+  #timeline-3-image {
+    background-size: 8rem;
+  }
+
+  #timeline-1-text h2,
+  #timeline-2-text h2,
+  #timeline-3-text h2,
+  #timeline-4-text h2 {
+    font-size: 2rem;
+  }
+
+  #timeline-1-text p,
+  #timeline-2-text p,
+  #timeline-3-text p,
+  #timeline-4-text p {
+    font-size: 1.3rem;
+  }
+
+  #career-logo,
+  #innovation-logo,
+  #About-chef-logo,
+  #guitar-logo {
+    width: 6rem;
+  }
+
+  #about-content3-info-container1-text h2,
+  #about-content3-info-container2-text h2,
+  #about-content3-info-container3-text h2,
+  #about-content3-info-container4-text h2 {
+    font-size: 2.5rem;
+  }
+
+  #about-content3-info-container1-text p,
+  #about-content3-info-container2-text p,
+  #about-content3-info-container3-text p,
+  #about-content3-info-container4-text p {
+    font-size: 1.5rem;
+  }
+
+  .project-title-content h1,
+  .project-title-content2 h1,
+  .project-title-content4 h1 {
+    font-size: 4rem;
+  }
+
+  .project-title-content p,
+  .project-title-content2 p,
+  .project-title-content4 p {
+    font-size: 1.3rem;
+  }
+
+  #arrow-icon {
+    width: 7rem;
+  }
+
+  #content6-btn a {
+    font-size: 3rem;
+  }
+
+  .project-content1-box1-text p,
+  .project-content1-box2-text p,
+  .project-content1-box3-text p,
+  .project-content3-box1-text p,
+  .project-content3-box2-text p,
+  .project-content3-box3-text p,
+  .project-content5-box1-text p,
+  .project-content5-box2-text p,
+  .project-content5-box3-text p {
+    font-size: 1.5rem;
+  }
+
+  .project-content1-box1-text-btn,
+  .project-content1-box2-text-btn,
+  .project-content1-box3-text-btn,
+  .project-content3-box1-text-btn,
+  .project-content3-box2-text-btn,
+  .project-content3-box3-text-btn,
+  .project-content5-box1-text-btn,
+  .project-content5-box2-text-btn,
+  .project-content5-box3-text-btn {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-height: 900px) {
+  
+  .npgImage #circle {
+    width: 20rem;
+    height: 20rem;
+    left: 20%;
+    top: 22%;
+  }
+
+  #box-1-react,
+  #css-logo,
+  #html-logo,
+  #js-logo, 
+  #gsap-logo,
+  #box-2-react, 
+  #box-2-node,
+  #box-2-mongo,
+  #box-2-springboot,
+  #box-2-firebase,
+  #box-3-jest,
+  #box-3-mocha {
+    width: 4rem;
+  }
+
+  .content3 #css-logo {
+    width: 3.4rem;
+  }
+
+  .content3 #box-2-node {
+    width: 3.4rem;
+  }
+
+  .about-content1-profile-images {
+    width: 20rem;
+  }
+}
+
+@media (max-height: 850px) {
+
+  #npgImage-images-jestlogo {
+    top: 74%;
+    left: 43%;
+  }
+
+  .content3 {
+    height: 250vh;
+  }
+
+  .box-1-whole,
+  .box-2-whole,
+  .box-3-whole {
+    height: fit-content;
+  }
+
+  #box-1,
+  #box-2,
+  #box-3 {
+    height: 55vh;
+  }
+
+  #box-1::before,
+  #box-2::before,
+  #box-3::before {
+    height: 55vh;
+  }
+
+}
+
+@media (max-height:800px) {
+
+  #npgImage-images-nodelogo {
+    top: 67%;
+  }
+
+  #npgImage-images-jestlogo {
+    top: 76%;
+  }
+
+  .warren-container h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
 
 
