@@ -291,7 +291,7 @@ body {
 /************ CONTENT #1 *************/
 .about-content1 {
   width: 100%;
-  height: 35vh;
+  height: 90vh;
   position: relative;
   background-color: transparent;
   display: flex;
@@ -314,51 +314,6 @@ body {
 .about-content1-nav-subtitle {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.8rem;
-}
-
-.about-content2 {
-  width: 100%;
-  height: 55vh;
-  position: relative;
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  padding:2rem 5rem 0 5rem;
-  gap: 5rem;
-}
-
-.about-content2-image {
-  width: 45%;
-  height: 100%;
-  position: relative;
-  background-image: url('../pic/grandfather.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.about-content2-text {
-  width: 55%;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1.1rem;
-  text-align: center;
-}
-
-#profile-image {
-  width: 28rem;
-  height: 100%;
-}
-
-.about-content2::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: lightgray;
-  bottom: 0;
 }
 
 .about-footer {
@@ -422,14 +377,6 @@ body {
 
 }
 
-@media (max-width: 959px) {
-  
-  /******** ABOUT ********/
-  .about-content2-text {
-    font-size: 0.9rem;
-  }
-}
-
 @media (max-width:826px) {
 
   /******** DASHBOARD ********/
@@ -458,23 +405,6 @@ body {
     font-size: 2rem;
   }
 
-  .about-content2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    overflow: visible;
-  }
-
-  .about-content2-image {
-    display: none;
-  }
-
-  .about-content2-text {
-    width: 60%;
-    font-size: 1rem;
-    margin-bottom: 7rem;
-  }
 }
 
 @media (max-width:630px) {
@@ -565,9 +495,6 @@ body {
     font-size: 1.4rem;
   }
 
-  .about-content2-text {
-    font-size: 0.8rem;
-  }
 }
 
 @media (max-width:450px) {
@@ -599,16 +526,51 @@ body {
     font-size: 1.1rem;
   }
 
-  .about-content2-text {
-    font-size: 0.8rem;
-  }
-
   .about-footer {
     font-size: 1rem;
   }
 }
 
+@media (min-width:2400px) and (min-height:1340px) {
 
+  .content1-title,
+  .write-content1-title {
+    font-size: 4.8rem;
+  }
 
+  .content1-nav-subtitle,
+  .write-content1-subtitle {
+    font-size: 2rem;
+  }
+
+  .content1-nav button,
+  .write-content1-nav button {
+    font-size: 2rem;
+  }
+
+  .section2-blogs .content2-title{
+    font-size: 2rem;
+  }
+
+  .content2-snippet {
+    font-size: 1.5rem;
+  }
+
+  .content2-body {
+    font-size: 1.3rem;
+  }
+
+  .write-content2 label {
+    font-size: 2rem;
+  }
+
+  .write-content2 button {
+    font-size: 1.4rem;
+  }
+
+  ::placeholder {
+    font-size: 1rem;
+  }
+}
 
 
