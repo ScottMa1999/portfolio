@@ -33,8 +33,8 @@ const about_timeline = gsap.timeline()
 .from('.about-content1-logos',{opacity:0, y:50, duration:2},"-=1")
 
 // ****** ABOUT_ME PAGE ScrollTrigger ******
-gsap.from('#timeline-3',{opacity:0, duration:2, scrollTrigger:{trigger:'#timeline-3', start:"top 90%", end:'bottom 50%'}})
-gsap.from('#timeline-2',{opacity:0, duration:2, scrollTrigger:{trigger:'#timeline-2', start:"top 90%", end:'bottom 50%'}})
-gsap.from('#timeline-4',{opacity:0, duration:2, scrollTrigger:{trigger:'#timeline-4', start:"top 90%", end:'bottom 50%'}})
+gsap.from('#timeline-3-image',{opacity:0, duration:2, scrollTrigger:{trigger:'#timeline-3', start:"top 90%", end:'bottom 50%'}})
+gsap.from('#timeline-2-image',{opacity:0, duration:2, scrollTrigger:{trigger:'#timeline-2', start:"top 90%", end:'bottom 50%'}})
+gsap.from('#timeline-4-image',{opacity:0, duration:2, scrollTrigger:{trigger:'#timeline-4', start:"top 90%", end:'bottom 50%'}})
 gsap.from('.about-content3-info',{opacity:0, duration:2, scrollTrigger:{trigger:'.about-content3-info', start:"top 90%", end:'bottom 50%'}})
 gsap.from('.about-content4-info-container',{opacity:0, duration:2, x:50, scrollTrigger:{trigger:'.about-content4-info-container', start:"top 90%", end:'bottom 50%'}})
