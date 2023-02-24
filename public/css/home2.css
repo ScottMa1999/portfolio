@@ -1654,6 +1654,10 @@
   padding: 1rem 0 1rem 0;
 }
 
+#timeline-2-text #job {
+  color: darkred;
+}
+
 #timeline-2::before {
   content: 'October ~ December, 2020';
   position: absolute;
@@ -1793,7 +1797,9 @@
   padding: 0.5rem 0 1rem 0;
 }
 
-
+#timeline-4-text #job {
+  color: darkred;
+}
 
 #timeline-4::before {
   content: "Feburary 2023 ~ current";
