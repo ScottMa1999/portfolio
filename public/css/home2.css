@@ -1636,10 +1636,10 @@
   position: relative;
   width: 30%;
   height: 80%;
-  background-image: url('../pic/shopify.png');
+  background-image: url('../pic/company.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 4rem;
+  background-size: 5rem;
 }
 
 #timeline-2-text {
@@ -1655,7 +1655,7 @@
 }
 
 #timeline-2::before {
-  content: '26th October, 2020 ~ 2021';
+  content: 'October ~ December, 2020';
   position: absolute;
   width:fit-content;
   height: 2rem;
@@ -1730,7 +1730,7 @@
 }
 
 #timeline-3::before {
-  content: "28th Aug, 2018 ~ 2019";
+  content: "28th Aug, 2018 ~ current";
   position: absolute;
   width:fit-content;
   height: 2rem;
@@ -1796,7 +1796,7 @@
 
 
 #timeline-4::before {
-  content: "28th October, 2021 ~ 2022";
+  content: "Feburary 2023 ~ current";
   position: absolute;
   width:fit-content;
   height: 2rem;
